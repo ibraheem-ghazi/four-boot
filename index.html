@@ -283,6 +283,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#jsdeliver" title="JSdeliver:" class="md-nav__link">
+    JSdeliver:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unpkg" title="Unpkg:" class="md-nav__link">
+    Unpkg:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#install-with-bower" title="Install with Bower:" class="md-nav__link">
     Install with Bower:
   </a>
@@ -292,13 +306,6 @@
         <li class="md-nav__item">
   <a href="#install-with-npm" title="Install with npm:" class="md-nav__link">
     Install with npm:
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-with-nuget" title="Install with NuGet:" class="md-nav__link">
-    Install with NuGet:
   </a>
   
 </li>
@@ -392,6 +399,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#jsdeliver" title="JSdeliver:" class="md-nav__link">
+    JSdeliver:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unpkg" title="Unpkg:" class="md-nav__link">
+    Unpkg:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#install-with-bower" title="Install with Bower:" class="md-nav__link">
     Install with Bower:
   </a>
@@ -401,13 +422,6 @@
         <li class="md-nav__item">
   <a href="#install-with-npm" title="Install with npm:" class="md-nav__link">
     Install with npm:
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-with-nuget" title="Install with NuGet:" class="md-nav__link">
-    Install with NuGet:
   </a>
   
 </li>
@@ -450,6 +464,22 @@
 <pre><code>Not Supported Yet :(
 </code></pre>
 
+<h3 id="jsdeliver">JSdeliver:</h3>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/npm/four-boot@1.0.0/dist/JQuery.four-boot.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/npm/four-boot@1.0.0/dist/JQuery.four-boot.min.css&quot;&gt;
+
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/four-boot@1.0.0/dist/JQuery.four-boot.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/four-boot@1.0.0/dist/JQuery.four-boot.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<h3 id="unpkg">Unpkg:</h3>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://unpkg.com/four-boot@1.0.0/dist/JQuery.four-boot.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://unpkg.com/four-boot@1.0.0/dist/JQuery.four-boot.min.css&quot;&gt;
+
+&lt;script src=&quot;https://unpkg.com/four-boot@1.0.0/dist/JQuery.four-boot.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/four-boot@1.0.0/dist/JQuery.four-boot.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
 <h3 id="install-with-bower">Install with Bower:</h3>
 <pre><code>Not Supported Yet :(
 </code></pre>
@@ -458,12 +488,8 @@
 <pre><code>npm install four-boot
 </code></pre>
 
-<h3 id="install-with-nuget">Install with NuGet:</h3>
-<pre><code>Not Supported Yet :(
-</code></pre>
-
 <h3 id="usage">Usage:</h3>
-<p>Create your <code>&lt;select&gt;</code> with the <code>.four-boot-select</code> class. The data-api will automatically theme these elements.</p>
+<p>Create your <code>&lt;select&gt;</code> then apply four-boot using js code.</p>
 <pre><code class="html">&lt;select class=&quot;four-boot-select&quot; &gt;
     &lt;option selected value=&quot;apple&quot;&gt;apple&lt;/option&gt;
     &lt;option value=&quot;banana&quot;&gt;banana&lt;/option&gt;
@@ -475,7 +501,9 @@
 </code></pre>
 
 <p>Options can be passed via data attributes or JavaScript.</p>
-<pre><code>$('select').fourBoot({
+<pre><code>$('select').fourBoot();
+//OR
+$('select').fourBoot({
     class:&quot;btn-danger&quot;,
     height:&quot;192px&quot;,
     liveSearch:true
