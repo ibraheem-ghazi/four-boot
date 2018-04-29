@@ -1,5 +1,5 @@
 /*!
- * four-boot v1.12.4 (https://github.com/IbraheemAlnabriss/four-boot)
+ * four-boot v1..0 beta (https://github.com/IbraheemAlnabriss/four-boot)
  *
  * Copyright 2018 four-boot
  * Licensed under MIT (https://github.com/IbraheemAlnabriss/four-boot/blob/master/LICENSE)
