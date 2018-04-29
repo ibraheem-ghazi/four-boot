@@ -1,0 +1,1936 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Bootstrap-select is a jQuery plugin that utilizes Bootstrap's dropdown.js to style and bring additional functionality to standard select elements.">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.2">
+    
+    
+      
+        <title>Examples - FourBoot Select Picker</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.8d40d89b.css">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <link rel="stylesheet" href="../css/JQuery.four-boot.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#fourboot-bootstrap-select-picker-bootstrap-4" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="FourBoot Select Picker" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                FourBoot Select Picker
+              </span>
+              <span class="md-header-nav__topic">
+                Examples
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/IbraheemAlnabriss/four-boot/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    FourBoot Select Picker
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/IbraheemAlnabriss/four-boot/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Examples
+      </label>
+    
+    <a href="./" title="Examples" class="md-nav__link md-nav__link--active">
+      Examples
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#examples" title="Examples:" class="md-nav__link">
+    Examples:
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-examples" title="Standard examples" class="md-nav__link">
+    Standard examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single" title="(single)" class="md-nav__link">
+    (single)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optgroup" title="(optgroup)" class="md-nav__link">
+    (optgroup)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple" title="(multiple)" class="md-nav__link">
+    (multiple)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#live-search-examples" title="Live search examples" class="md-nav__link">
+    Live search examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default" title="(default)" class="md-nav__link">
+    (default)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-sensitive" title="(case sensitive)" class="md-nav__link">
+    (case sensitive)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tokens" title="(tokens)" class="md-nav__link">
+    (tokens)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#max-options-examples" title="Max Options examples" class="md-nav__link">
+    Max Options examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#select" title="(select)" class="md-nav__link">
+    (select)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optgroup_1" title="(optgroup)" class="md-nav__link">
+    (optgroup)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#button-text-examples" title="Button text examples" class="md-nav__link">
+    Button text examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#title" title="(title)" class="md-nav__link">
+    (title)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#placeholder-data-placeholder" title="(placeholder / data-placeholder)" class="md-nav__link">
+    (placeholder / data-placeholder)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selected-item-with-title-set" title="(selected item with title set)" class="md-nav__link">
+    (selected item with title set)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selected-button-text-examples" title="Selected button text examples" class="md-nav__link">
+    Selected button text examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mutliple-separator-text" title="(mutliple separator text)" class="md-nav__link">
+    (mutliple separator text)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-title-attribute" title="(option title attribute)" class="md-nav__link">
+    (option title attribute)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-selected-button-format-examples" title="Multiple selected button format examples" class="md-nav__link">
+    Multiple selected button format examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#static" title="(static)" class="md-nav__link">
+    (static)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#values" title="(values)" class="md-nav__link">
+    (values)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#count" title="(count)" class="md-nav__link">
+    (count)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#count-x" title="(count &gt; X)" class="md-nav__link">
+    (count &gt; X)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#styling-examples" title="Styling examples" class="md-nav__link">
+    Styling examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#button-styling" title="(button styling)" class="md-nav__link">
+    (button styling)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dropdown-styling" title="(dropdown styling)" class="md-nav__link">
+    (dropdown styling)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#style-individual-options" title="(style individual options)" class="md-nav__link">
+    (style individual options)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customize-options-examples" title="Customize options examples" class="md-nav__link">
+    Customize options examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#icons" title="(icons)" class="md-nav__link">
+    (icons)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content" title="(content)" class="md-nav__link">
+    (content)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#title_1" title="(title)" class="md-nav__link">
+    (title)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customize-dropoown-examples" title="Customize dropoown examples" class="md-nav__link">
+    Customize dropoown examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#height" title="(height)" class="md-nav__link">
+    (height)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actions" title="(actions)" class="md-nav__link">
+    (actions)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-actions" title="(custom actions)" class="md-nav__link">
+    (custom actions)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#divider" title="(divider)" class="md-nav__link">
+    (divider)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menu-header" title="(menu header)" class="md-nav__link">
+    (menu header)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observer-examples" title="Observer examples" class="md-nav__link">
+    Observer examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enabled" title="(enabled)" class="md-nav__link">
+    (enabled)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disabled" title="(disabled)" class="md-nav__link">
+    (disabled)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../methods/" title="Methods" class="md-nav__link">
+      Methods
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../options/" title="Options" class="md-nav__link">
+      Options
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#examples" title="Examples:" class="md-nav__link">
+    Examples:
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#standard-examples" title="Standard examples" class="md-nav__link">
+    Standard examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single" title="(single)" class="md-nav__link">
+    (single)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optgroup" title="(optgroup)" class="md-nav__link">
+    (optgroup)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple" title="(multiple)" class="md-nav__link">
+    (multiple)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#live-search-examples" title="Live search examples" class="md-nav__link">
+    Live search examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default" title="(default)" class="md-nav__link">
+    (default)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-sensitive" title="(case sensitive)" class="md-nav__link">
+    (case sensitive)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tokens" title="(tokens)" class="md-nav__link">
+    (tokens)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#max-options-examples" title="Max Options examples" class="md-nav__link">
+    Max Options examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#select" title="(select)" class="md-nav__link">
+    (select)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optgroup_1" title="(optgroup)" class="md-nav__link">
+    (optgroup)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#button-text-examples" title="Button text examples" class="md-nav__link">
+    Button text examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#title" title="(title)" class="md-nav__link">
+    (title)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#placeholder-data-placeholder" title="(placeholder / data-placeholder)" class="md-nav__link">
+    (placeholder / data-placeholder)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selected-item-with-title-set" title="(selected item with title set)" class="md-nav__link">
+    (selected item with title set)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selected-button-text-examples" title="Selected button text examples" class="md-nav__link">
+    Selected button text examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mutliple-separator-text" title="(mutliple separator text)" class="md-nav__link">
+    (mutliple separator text)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-title-attribute" title="(option title attribute)" class="md-nav__link">
+    (option title attribute)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-selected-button-format-examples" title="Multiple selected button format examples" class="md-nav__link">
+    Multiple selected button format examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#static" title="(static)" class="md-nav__link">
+    (static)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#values" title="(values)" class="md-nav__link">
+    (values)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#count" title="(count)" class="md-nav__link">
+    (count)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#count-x" title="(count &gt; X)" class="md-nav__link">
+    (count &gt; X)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#styling-examples" title="Styling examples" class="md-nav__link">
+    Styling examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#button-styling" title="(button styling)" class="md-nav__link">
+    (button styling)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dropdown-styling" title="(dropdown styling)" class="md-nav__link">
+    (dropdown styling)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#style-individual-options" title="(style individual options)" class="md-nav__link">
+    (style individual options)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customize-options-examples" title="Customize options examples" class="md-nav__link">
+    Customize options examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#icons" title="(icons)" class="md-nav__link">
+    (icons)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content" title="(content)" class="md-nav__link">
+    (content)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#title_1" title="(title)" class="md-nav__link">
+    (title)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customize-dropoown-examples" title="Customize dropoown examples" class="md-nav__link">
+    Customize dropoown examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#height" title="(height)" class="md-nav__link">
+    (height)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actions" title="(actions)" class="md-nav__link">
+    (actions)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-actions" title="(custom actions)" class="md-nav__link">
+    (custom actions)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#divider" title="(divider)" class="md-nav__link">
+    (divider)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#menu-header" title="(menu header)" class="md-nav__link">
+    (menu header)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observer-examples" title="Observer examples" class="md-nav__link">
+    Observer examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enabled" title="(enabled)" class="md-nav__link">
+    (enabled)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disabled" title="(disabled)" class="md-nav__link">
+    (disabled)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/IbraheemAlnabriss/four-boot/edit/master/docs/examples.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <style>
+.text-bold{
+    font-weight: bold !important;
+}
+.hover-bg-black:hover{
+    background:black !important;
+    color:#fff !important;
+}
+.four-boot{
+margin:10px 0px;
+}
+article section {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px !important;
+}
+article h6 {
+    margin-top: 80px !important;
+}
+article h4 + h6 {
+    margin-top:40px !important;
+}
+article section button.fix-mt{
+    margin-top: -30px !important;
+}
+/*conflict between theme and bootstrap 4 (fix)*/
+.btn{
+    font-size:1.6rem;
+}
+.dropdown-item{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.dropdown-header {
+    font-size: 14px;
+    margin: 0px !important;
+}
+/********************************/
+#modal{
+    font-size:16px !important;
+    font-weight:400 !important;
+    line-height:1rem !important;
+}
+pre{
+margin:0px;
+}
+</style>
+
+<h1 id="fourboot-bootstrap-select-picker-bootstrap-4"><strong>FourBoot Bootstrap Select Picker (Bootstrap 4)</strong></h1>
+<p>javascript library to convert html select into beautiful <strong>Bootstrap 4</strong> dropdown</p>
+<h3 id="examples">Examples:</h3>
+<h4 id="standard-examples"><u><em>Standard examples</em></u></h4>
+<h6 id="single"><u><em>(single)</em></u></h6>
+<p><section>
+    <select class ="four-boot" name="fourboot_select">
+        <option value="1">Banana</option>
+        <option value="2">Apple</option>
+        <option value="3">Watermelon</option>
+        <option value="4">Carrot</option>
+        <option value="5">Pinapple</option>
+    </select></p>
+<pre><code class="html">    &lt;select class =&quot;four-boot&quot; name=&quot;fourboot_select&quot;&gt;
+        &lt;option value=&quot;1&quot;&gt;Banana&lt;/option&gt;
+        &lt;option value=&quot;2&quot;&gt;Apple&lt;/option&gt;
+        &lt;option value=&quot;3&quot;&gt;Watermelon&lt;/option&gt;
+        &lt;option value=&quot;4&quot;&gt;Carrot&lt;/option&gt;
+        &lt;option value=&quot;5&quot;&gt;Pinapple&lt;/option&gt;
+    &lt;/select&gt;
+</code></pre>
+
+</section>
+
+<h6 id="optgroup"><u><em>(optgroup)</em></u></h6>
+<p><section>
+    <select class ="four-boot" name="fourboot_select">
+        <optgroup label='Fruits'>
+            <option value="1">Banana</option>
+            <option value="2">Apple</option>
+            <option value="3">Watermelon</option>
+            <option value="4">Carrot</option>
+            <option value="5">Pinapple</option>
+        </optgroup>
+        <optgroup label='Drinks'>
+            <option value="6">Coffee</option>
+            <option value="7">Tea</option>
+        </optgroup>
+    </select></p>
+<pre><code class="html">&lt;select class =&quot;four-boot&quot; name=&quot;fourboot_select&quot;&gt;
+    &lt;optgroup label='Fruits'&gt;
+        &lt;option value=&quot;1&quot;&gt;Banana&lt;/option&gt;
+        &lt;option value=&quot;2&quot;&gt;Apple&lt;/option&gt;
+        &lt;option value=&quot;3&quot;&gt;Watermelon&lt;/option&gt;
+        &lt;option value=&quot;4&quot;&gt;Carrot&lt;/option&gt;
+        &lt;option value=&quot;5&quot;&gt;Pinapple&lt;/option&gt;
+    &lt;/optgroup&gt;
+    &lt;optgroup label='Drinks'&gt;
+        &lt;option value=&quot;6&quot;&gt;Coffee&lt;/option&gt;
+        &lt;option value=&quot;7&quot;&gt;Tea&lt;/option&gt;
+    &lt;/optgroup&gt;
+&lt;/select&gt;
+</code></pre>
+
+</section>
+
+<h6 id="multiple"><u><em>(multiple)</em></u></h6>
+<p><section>
+    <select class ="four-boot" multiple name="fourboot_select">
+        <optgroup label='Fruits'>
+            <option value="1">Banana</option>
+            <option value="2">Apple</option>
+            <option value="3">Watermelon</option>
+            <option value="4">Carrot</option>
+            <option value="5">Pinapple</option>
+        </optgroup>
+        <optgroup label='Drinks'>
+            <option value="6">Coffee</option>
+            <option value="7">Tea</option>
+        </optgroup>
+    </select></p>
+<pre><code class="html">&lt;select class =&quot;four-boot&quot; multiple name=&quot;fourboot_select&quot;&gt;
+        &lt;optgroup label='Fruits'&gt;
+            &lt;option value=&quot;1&quot;&gt;Banana&lt;/option&gt;
+            &lt;option value=&quot;2&quot;&gt;Apple&lt;/option&gt;
+            &lt;option value=&quot;3&quot;&gt;Watermelon&lt;/option&gt;
+            &lt;option value=&quot;4&quot;&gt;Carrot&lt;/option&gt;
+            &lt;option value=&quot;5&quot;&gt;Pinapple&lt;/option&gt;
+        &lt;/optgroup&gt;
+        &lt;optgroup label='Drinks'&gt;
+            &lt;option value=&quot;6&quot;&gt;Coffee&lt;/option&gt;
+            &lt;option value=&quot;7&quot;&gt;Tea&lt;/option&gt;
+        &lt;/optgroup&gt;
+    &lt;/select&gt;
+</code></pre>
+
+<p></section>
+<hr></p>
+<h4 id="live-search-examples"><u><em>Live search examples</em></u></h4>
+<h6 id="default"><u><em>(default)</em></u></h6>
+<p><section>
+    <select class ="four-boot" multiple data-live-search="true" name="fourboot_select">
+        <optgroup label='Fruits'>
+            <option value="1">Banana</option>
+            <option value="2">Apple</option>
+            <option value="3">Watermelon</option>
+            <option value="4">Carrot</option>
+            <option value="5">Pinapple</option>
+        </optgroup>
+        <optgroup label='Drinks'>
+            <option value="6">Coffee</option>
+            <option value="7">Tea</option>
+        </optgroup>
+    </select></p>
+<pre><code class="html">&lt;select class =&quot;four-boot&quot; multiple data-live-search=&quot;true&quot; name=&quot;fourboot_select&quot;&gt;
+        &lt;optgroup label='Fruits'&gt;
+            &lt;option value=&quot;1&quot;&gt;Banana&lt;/option&gt;
+            &lt;option value=&quot;2&quot;&gt;Apple&lt;/option&gt;
+            &lt;option value=&quot;3&quot;&gt;Watermelon&lt;/option&gt;
+            &lt;option value=&quot;4&quot;&gt;Carrot&lt;/option&gt;
+            &lt;option value=&quot;5&quot;&gt;Pinapple&lt;/option&gt;
+        &lt;/optgroup&gt;
+        &lt;optgroup label='Drinks'&gt;
+            &lt;option value=&quot;6&quot;&gt;Coffee&lt;/option&gt;
+            &lt;option value=&quot;7&quot;&gt;Tea&lt;/option&gt;
+        &lt;/optgroup&gt;
+    &lt;/select&gt;
+</code></pre>
+
+</section>
+
+<h6 id="case-sensitive"><u><em>(case sensitive)</em></u></h6>
+<p><section>
+    <select class ="four-boot" multiple data-live-search="true" data-live-search-case-sensitive="true" name="fourboot_select">
+        <optgroup label='Fruits'>
+            <option value="1">Banana</option>
+            <option value="2">Apple</option>
+            <option value="3">Watermelon</option>
+            <option value="4">Carrot</option>
+            <option value="5">Pinapple</option>
+        </optgroup>
+        <optgroup label='Drinks'>
+            <option value="6">Coffee</option>
+            <option value="7">Tea</option>
+        </optgroup>
+    </select></p>
+<pre><code class="html">    &lt;select class =&quot;four-boot&quot; multiple data-live-search=&quot;true&quot; data-live-search-case-sensitive=&quot;true&quot; name=&quot;fourboot_select&quot;&gt;
+        &lt;optgroup label='Fruits'&gt;
+            &lt;option value=&quot;1&quot;&gt;Banana&lt;/option&gt;
+            &lt;option value=&quot;2&quot;&gt;Apple&lt;/option&gt;
+            &lt;option value=&quot;3&quot;&gt;Watermelon&lt;/option&gt;
+            &lt;option value=&quot;4&quot;&gt;Carrot&lt;/option&gt;
+            &lt;option value=&quot;5&quot;&gt;Pinapple&lt;/option&gt;
+        &lt;/optgroup&gt;
+        &lt;optgroup label='Drinks'&gt;
+            &lt;option value=&quot;6&quot;&gt;Coffee&lt;/option&gt;
+            &lt;option value=&quot;7&quot;&gt;Tea&lt;/option&gt;
+        &lt;/optgroup&gt;
+    &lt;/select&gt;
+</code></pre>
+
+</section>
+
+<h6 id="tokens"><u><em>(tokens)</em></u></h6>
+<p>try search for fruit colors: yellow, red, green, orange, brown
+<section>
+    <select class ="four-boot" multiple data-live-search="true" data-live-search-case-sensitive="true" name="fourboot_select">
+            <option value="1" data-tokens="yellow">Banana</option>
+            <option value="2" data-tokens="red, green">Apple</option>
+            <option value="3" data-tokens="green">Watermelon</option>
+            <option value="4" data-tokens="orange">Carrot</option>
+            <option value="5" data-tokens="brown, yellow, green">Pinapple</option>
+    </select></p>
+<pre><code class="html">&lt;select class =&quot;four-boot&quot; multiple data-live-search=&quot;true&quot; data-live-search-case-sensitive=&quot;true&quot; name=&quot;fourboot_select&quot;&gt;
+        &lt;option value=&quot;1&quot; data-tokens=&quot;yellow&quot;&gt;Banana&lt;/option&gt;
+        &lt;option value=&quot;2&quot; data-tokens=&quot;red, green&quot;&gt;Apple&lt;/option&gt;
+        &lt;option value=&quot;3&quot; data-tokens=&quot;green&quot;&gt;Watermelon&lt;/option&gt;
+        &lt;option value=&quot;4&quot; data-tokens=&quot;orange&quot;&gt;Carrot&lt;/option&gt;
+        &lt;option value=&quot;5&quot; data-tokens=&quot;brown, yellow, green&quot;&gt;Pinapple&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+
+<p></section>
+<hr></p>
+<h4 id="max-options-examples"><u><em>Max Options examples</em></u></h4>
+<h6 id="select"><u><em>(select)</em></u></h6>
+<p><section>
+    <select class ="four-boot" multiple data-max-options="2" name="fourboot_select">
+            <option value="1" data-tokens="yellow">Banana</option>
+            <option value="2" data-tokens="red, green">Apple</option>
+            <option value="3" data-tokens="green">Watermelon</option>
+            <option value="4" data-tokens="orange">Carrot</option>
+            <option value="5" data-tokens="brown, yellow, green">Pinapple</option>
+    </select></p>
+<pre><code class="html">&lt;select class =&quot;four-boot&quot; multiple data-max-options=&quot;2&quot; name=&quot;fourboot_select&quot;&gt;
+        &lt;option value=&quot;1&quot; data-tokens=&quot;yellow&quot;&gt;Banana&lt;/option&gt;
+        &lt;option value=&quot;2&quot; data-tokens=&quot;red, green&quot;&gt;Apple&lt;/option&gt;
+        &lt;option value=&quot;3&quot; data-tokens=&quot;green&quot;&gt;Watermelon&lt;/option&gt;
+        &lt;option value=&quot;4&quot; data-tokens=&quot;orange&quot;&gt;Carrot&lt;/option&gt;
+        &lt;option value=&quot;5&quot; data-tokens=&quot;brown, yellow, green&quot;&gt;Pinapple&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+
+</section>
+
+<h6 id="optgroup_1"><u><em>(optgroup)</em></u></h6>
+<p><section>
+    <select class ="four-boot" multiple name="fourboot_select">
+        <optgroup label='Fruits' data-max-options="3" >
+            <option value="1">Banana</option>
+            <option value="2">Apple</option>
+            <option value="3">Watermelon</option>
+            <option value="4">Carrot</option>
+            <option value="5">Pinapple</option>
+        </optgroup>
+        <optgroup label='Drinks' data-max-options="1">
+            <option value="6">Coffee</option>
+            <option value="7">Tea</option>
+        </optgroup>
+    </select></p>
+<pre><code class="html">    &lt;select class =&quot;four-boot&quot; multiple name=&quot;fourboot_select&quot;&gt;
+        &lt;optgroup label='Fruits' data-max-options=&quot;3&quot; &gt;
+            &lt;option value=&quot;1&quot;&gt;Banana&lt;/option&gt;
+            &lt;option value=&quot;2&quot;&gt;Apple&lt;/option&gt;
+            &lt;option value=&quot;3&quot;&gt;Watermelon&lt;/option&gt;
+            &lt;option value=&quot;4&quot;&gt;Carrot&lt;/option&gt;
+            &lt;option value=&quot;5&quot;&gt;Pinapple&lt;/option&gt;
+        &lt;/optgroup&gt;
+        &lt;optgroup label='Drinks' data-max-options=&quot;1&quot;&gt;
+            &lt;option value=&quot;6&quot;&gt;Coffee&lt;/option&gt;
+            &lt;option value=&quot;7&quot;&gt;Tea&lt;/option&gt;
+        &lt;/optgroup&gt;
+    &lt;/select&gt;
+</code></pre>
+
+<p></section>
+<hr></p>
+<h4 id="button-text-examples"><u><em>Button text examples</em></u></h4>
+<h6 id="title"><u><em>(title)</em></u></h6>
+<p><section>
+    <select class="four-boot" multiple title="this from title" name="fourboot_select">
+            <option value="1">Banana</option>
+            <option value="2">Apple</option>
+            <option value="3">Watermelon</option>
+            <option value="4">Carrot</option>
+            <option value="5">Pinapple</option>
+    </select></p>
+<pre><code class="html">&lt;select class=&quot;four-boot&quot; multiple title=&quot;this from title&quot; name=&quot;fourboot_select&quot;&gt;
+        &lt;option value=&quot;1&quot;&gt;Banana&lt;/option&gt;
+        &lt;option value=&quot;2&quot;&gt;Apple&lt;/option&gt;
+        &lt;option value=&quot;3&quot;&gt;Watermelon&lt;/option&gt;
+        &lt;option value=&quot;4&quot;&gt;Carrot&lt;/option&gt;
+        &lt;option value=&quot;5&quot;&gt;Pinapple&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+
+</section>
+
+<h6 id="placeholder-data-placeholder"><u><em>(placeholder / data-placeholder)</em></u></h6>
+<p><section>
+    <select class="four-boot" multiple title="this from data-placeholder" name="fourboot_select">
+            <option value="1">Banana</option>
+            <option value="2">Apple</option>
+            <option value="3">Watermelon</option>
+            <option value="4">Carrot</option>
+            <option value="5">Pinapple</option>
+    </select></p>
+<pre><code class="html">    &lt;select class=&quot;four-boot&quot; multiple title=&quot;this from data-placeholder&quot; name=&quot;fourboot_select&quot;&gt;
+            &lt;option value=&quot;1&quot;&gt;Banana&lt;/option&gt;
+            &lt;option value=&quot;2&quot;&gt;Apple&lt;/option&gt;
+            &lt;option value=&quot;3&quot;&gt;Watermelon&lt;/option&gt;
+            &lt;option value=&quot;4&quot;&gt;Carrot&lt;/option&gt;
+            &lt;option value=&quot;5&quot;&gt;Pinapple&lt;/option&gt;
+    &lt;/select&gt;
+</code></pre>
+
+</section>
+
+<h6 id="selected-item-with-title-set"><u><em>(selected item with title set)</em></u></h6>
+<p><section>
+    <select class="four-boot" multiple title="select option from list" name="fourboot_select">
+            <option value="1" selected>Banana</option>
+            <option value="2" selected>Apple</option>
+            <option value="3">Watermelon</option>
+            <option value="4">Carrot</option>
+            <option value="5">Pinapple</option>
+    </select></p>
+<pre><code class="html">&lt;select class=&quot;four-boot&quot; multiple title=&quot;select option from list&quot; name=&quot;fourboot_select&quot;&gt;
+        &lt;option value=&quot;1&quot; selected&gt;Banana&lt;/option&gt;
+        &lt;option value=&quot;2&quot; selected&gt;Apple&lt;/option&gt;
+        &lt;option value=&quot;3&quot;&gt;Watermelon&lt;/option&gt;
+        &lt;option value=&quot;4&quot;&gt;Carrot&lt;/option&gt;
+        &lt;option value=&quot;5&quot;&gt;Pinapple&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+
+<p></section>
+<hr></p>
+<h4 id="selected-button-text-examples"><u><em>Selected button text examples</em></u></h4>
+<h6 id="mutliple-separator-text"><u><em>(mutliple separator text)</em></u></h6>
+<p><section>
+    <select class="four-boot" multiple data-multiple-selected-separator=" | " name="fourboot_select">
+            <option value="1">Banana</option>
+            <option value="2">Apple</option>
+            <option value="3">Watermelon</option>
+            <option value="4">Carrot</option>
+            <option value="5">Pinapple</option>
+    </select></p>
+<pre><code class="html">    &lt;select class=&quot;four-boot&quot; multiple data-multiple-selected-separator=&quot; | &quot; name=&quot;fourboot_select&quot;&gt;
+        ...
+    &lt;/select&gt;
+</code></pre>
+
+</section>
+
+<h6 id="option-title-attribute"><u><em>(option title attribute)</em></u></h6>
+<p><section>
+    <select class="four-boot" multiple data-multiple-selected-separator=" | " name="fourboot_select">
+            <option title="Banana is yellow" value="1">Banana</option>
+            <option title="Apple is red" value="2">Apple</option>
+            <option title="Watermelon is green" value="3">Watermelon</option>
+            <option title="Carrot is orange" value="4">Carrot</option>
+            <option title="Pinapple is brown" value="5">Pinapple</option>
+    </select></p>
+<pre><code class="html">&lt;select class=&quot;four-boot&quot; multiple data-multiple-selected-separator=&quot; | &quot; name=&quot;fourboot_select&quot;&gt;
+    &lt;option title=&quot;Banana is yellow&quot; value=&quot;1&quot;&gt;Banana&lt;/option&gt;
+    &lt;option title=&quot;Apple is red&quot; value=&quot;2&quot;&gt;Apple&lt;/option&gt;
+    &lt;option title=&quot;Watermelon is green&quot; value=&quot;3&quot;&gt;Watermelon&lt;/option&gt;
+    &lt;option title=&quot;Carrot is orange&quot; value=&quot;4&quot;&gt;Carrot&lt;/option&gt;
+    &lt;option title=&quot;Pinapple is brown&quot; value=&quot;5&quot;&gt;Pinapple&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+
+<p></section>
+<hr></p>
+<h4 id="multiple-selected-button-format-examples"><u><em>Multiple selected button format examples</em></u></h4>
+<h6 id="static"><u><em>(static)</em></u></h6>
+<p><section>
+    <select class="four-boot" multiple data-selected-text-format="static" title="static title/placeholder" name="fourboot_select">
+            <option value="1">Banana</option>
+            <option value="2">Apple</option>
+            <option value="3">Watermelon</option>
+            <option value="4">Carrot</option>
+            <option value="5">Pinapple</option>
+    </select></p>
+<pre><code class="html">    &lt;select class=&quot;four-boot&quot; multiple data-selected-text-format=&quot;static&quot; title=&quot;static title/placeholder&quot; name=&quot;fourboot_select&quot;&gt;
+        ...
+    &lt;/select&gt;
+</code></pre>
+
+</section>
+
+<h6 id="values"><u><em>(values)</em></u></h6>
+<p><section>
+    <select class="four-boot" multiple data-selected-text-format="values" name="fourboot_select">
+            <option value="1">Banana</option>
+            <option value="2">Apple</option>
+            <option value="3">Watermelon</option>
+            <option value="4">Carrot</option>
+            <option value="5">Pinapple</option>
+    </select></p>
+<pre><code class="html">    &lt;select class=&quot;four-boot&quot; multiple data-selected-text-format=&quot;values&quot; name=&quot;fourboot_select&quot;&gt;
+        ...
+    &lt;/select&gt;
+</code></pre>
+
+</section>
+
+<h6 id="count"><u><em>(count)</em></u></h6>
+<p><section>
+    <select class="four-boot" multiple data-selected-text-format="count" name="fourboot_select">
+            <option value="1">Banana</option>
+            <option value="2">Apple</option>
+            <option value="3">Watermelon</option>
+            <option value="4">Carrot</option>
+            <option value="5">Pinapple</option>
+    </select></p>
+<pre><code class="html">    &lt;select class=&quot;four-boot&quot; multiple data-selected-text-format=&quot;count&quot; name=&quot;fourboot_select&quot;&gt;
+        ...
+    &lt;/select&gt;
+</code></pre>
+
+</section>
+
+<h6 id="count-x"><u><em>(count &gt; X)</em></u></h6>
+<p>in this example <code>count &gt; 3</code>
+<section>
+    <select class="four-boot" multiple data-selected-text-format="count &gt; 3" name="fourboot_select">
+            <option value="1">Banana</option>
+            <option value="2">Apple</option>
+            <option value="3">Watermelon</option>
+            <option value="4">Carrot</option>
+            <option value="5">Pinapple</option>
+    </select></p>
+<pre><code class="html">    &lt;select class=&quot;four-boot&quot; multiple data-selected-text-format=&quot;count &amp;gt; 3&quot; name=&quot;fourboot_select&quot;&gt;
+        ...
+    &lt;/select&gt;
+    &lt;select class=&quot;four-boot&quot; multiple data-selected-text-format=&quot;count &gt; 3&quot; name=&quot;fourboot_select&quot;&gt;
+        ...
+    &lt;/select&gt;
+</code></pre>
+
+</section>
+
+<hr>
+
+<h4 id="styling-examples"><u><em>Styling examples</em></u></h4>
+<h6 id="button-styling"><u><em>(button styling)</em></u></h6>
+<p><small>use attribute <code>class</code> to append classes to default</small><br>
+<small>use attribute <code>data-class</code> to replace default classes</small>
+<section>
+    <select class ="four-boot" data-class="btn-primary" name="fourboot_select">
+        <option value="1">Banana</option>
+        <option value="2">Apple</option>
+        <option value="3">Watermelon</option>
+        <option value="4">Carrot</option>
+        <option value="5">Pinapple</option>
+    </select>
+    <select class ="four-boot" data-class="btn-info" name="fourboot_select">
+        <option value="1">Banana</option>
+        <option value="2">Apple</option>
+        <option value="3">Watermelon</option>
+        <option value="4">Carrot</option>
+        <option value="5">Pinapple</option>
+    </select>
+    <select class ="four-boot" data-class="btn-warning" name="fourboot_select">
+        <option value="1">Banana</option>
+        <option value="2">Apple</option>
+        <option value="3">Watermelon</option>
+        <option value="4">Carrot</option>
+        <option value="5">Pinapple</option>
+    </select>
+    <select class ="four-boot" data-class="btn-danger" name="fourboot_select">
+        <option value="1">Banana</option>
+        <option value="2">Apple</option>
+        <option value="3">Watermelon</option>
+        <option value="4">Carrot</option>
+        <option value="5">Pinapple</option>
+    </select>
+    <select class ="four-boot" data-class="btn-outline-danger" name="fourboot_select">
+        <option value="1">Banana</option>
+        <option value="2">Apple</option>
+        <option value="3">Watermelon</option>
+        <option value="4">Carrot</option>
+        <option value="5">Pinapple</option>
+    </select></p>
+<pre><code class="html">    &lt;select class =&quot;four-boot&quot; data-class=&quot;btn-primary&quot; name=&quot;fourboot_select&quot;&gt;
+        ...
+    &lt;/select&gt;
+    &lt;select class =&quot;four-boot&quot; data-class=&quot;btn-info&quot; name=&quot;fourboot_select&quot;&gt;
+        ...
+    &lt;/select&gt;
+    &lt;select class =&quot;four-boot&quot; data-class=&quot;btn-warning&quot; name=&quot;fourboot_select&quot;&gt;
+        ...
+    &lt;/select&gt;
+    &lt;select class =&quot;four-boot&quot; data-class=&quot;btn-danger&quot; name=&quot;fourboot_select&quot;&gt;
+        ...
+    &lt;/select&gt;
+    &lt;select class =&quot;four-boot&quot; data-class=&quot;btn-outline-danger&quot; name=&quot;fourboot_select&quot;&gt;
+        ...
+    &lt;/select&gt;
+</code></pre>
+
+</section>
+
+<h6 id="dropdown-styling"><u><em>(dropdown styling)</em></u></h6>
+<p><section>
+    <select class ="four-boot" data-dropdown-class="dropleft" name="fourboot_select">
+        <option value="1">Banana</option>
+        <option value="2">Apple</option>
+        <option value="3">Watermelon</option>
+        <option value="4">Carrot</option>
+        <option value="5">Pinapple</option>
+    </select>
+    <select class ="four-boot" data-dropdown-class="dropright" name="fourboot_select">
+        <option value="1">Banana</option>
+        <option value="2">Apple</option>
+        <option value="3">Watermelon</option>
+        <option value="4">Carrot</option>
+        <option value="5">Pinapple</option>
+    </select></p>
+<pre><code class="html">    &lt;select class =&quot;four-boot&quot; data-dropdown-class=&quot;dropleft&quot; name=&quot;fourboot_select&quot;&gt;
+        ...
+    &lt;/select&gt;
+    &lt;select class =&quot;four-boot&quot; data-dropdown-class=&quot;dropright&quot; name=&quot;fourboot_select&quot;&gt;
+        ...
+    &lt;/select&gt;
+</code></pre>
+
+</section>
+
+<h6 id="style-individual-options"><u><em>(style individual options)</em></u></h6>
+<p><section>
+    <select class ="four-boot" data-dropdown-class="dropright" name="fourboot_select">
+        <option data-class="text-primary hover-bg-black" value="1">Banana</option>
+        <option data-class="text-info hover-bg-black" value="2">Apple</option>
+        <option data-class="text-warning hover-bg-black" value="3">Watermelon</option>
+        <option data-class="text-danger hover-bg-black" value="4">Carrot</option>
+        <option data-class="text-bold hover-bg-black" value="5">Pinapple</option>
+    </select></p>
+<pre><code class="html">    &lt;select class =&quot;four-boot&quot; data-dropdown-class=&quot;dropright&quot; name=&quot;fourboot_select&quot;&gt;
+        &lt;option data-class=&quot;text-primary hover-bg-black&quot; value=&quot;1&quot;&gt;Banana&lt;/option&gt;
+        &lt;option data-class=&quot;text-info hover-bg-black&quot; value=&quot;2&quot;&gt;Apple&lt;/option&gt;
+        &lt;option data-class=&quot;text-warning hover-bg-black&quot; value=&quot;3&quot;&gt;Watermelon&lt;/option&gt;
+        &lt;option data-class=&quot;text-danger hover-bg-black&quot; value=&quot;4&quot;&gt;Carrot&lt;/option&gt;
+        &lt;option data-class=&quot;text-bold hover-bg-black&quot; value=&quot;5&quot;&gt;Pinapple&lt;/option&gt;
+    &lt;/select&gt;
+</code></pre>
+
+<p></section>
+<hr></p>
+<h4 id="customize-options-examples"><u><em>Customize options examples</em></u></h4>
+<h6 id="icons"><u><em>(icons)</em></u></h6>
+<p><section>
+    <select class="four-boot">
+        <option data-icon="fa fa-twitter" value="twitter">Twitter</option>
+        <option data-icon="fa fa-facebook" value="facebook">Facebook</option>
+        <option data-icon="fa fa-youtube" value="youtube">Youtube</option>
+        <option data-icon="fa fa-instagram" value="instagram">Instagram</option>
+        <option data-icon="fa fa-telegram" value="telegram">Telegram</option>
+    </select></p>
+<pre><code class="html">    &lt;select class=&quot;four-boot&quot;&gt;
+        &lt;option data-icon=&quot;fa fa-twitter&quot; value=&quot;twitter&quot;&gt;Twitter&lt;/option&gt;
+        &lt;option data-icon=&quot;fa fa-facebook&quot; value=&quot;facebook&quot;&gt;Facebook&lt;/option&gt;
+        &lt;option data-icon=&quot;fa fa-youtube&quot; value=&quot;youtube&quot;&gt;Youtube&lt;/option&gt;
+        &lt;option data-icon=&quot;fa fa-instagram&quot; value=&quot;instagram&quot;&gt;Instagram&lt;/option&gt;
+        &lt;option data-icon=&quot;fa fa-telegram&quot; value=&quot;telegram&quot;&gt;Telegram&lt;/option&gt;
+    &lt;/select&gt;
+</code></pre>
+
+</section>
+
+<h6 id="content"><u><em>(content)</em></u></h6>
+<p><section>
+    <select class="four-boot">
+        <option data-content="<span class='text-danger'><i class='fa fa-fw fa-google-plus text-primary '></i>&nbsp;Google Plus</span>" value="1"&gt;Google Plus</option>
+        <option data-content="<span class='text-primary'><i class='fa fa-fw fa-twitter text-primary '></i>&nbsp;Twitter</span>" value="2"&gt;Twitter</option>
+    </select></p>
+<pre><code class="html">    &lt;select class=&quot;four-boot&quot;&gt;
+        &lt;option data-content=&quot;&lt;span class='text-danger'&gt;&lt;i class='fa fa-fw fa-google-plus text-primary '&gt;&lt;/i&gt;&amp;nbsp;Google Plus&lt;/span&gt;&quot; value=&quot;1&quot;&gt;Google Plus&lt;/option&gt;
+        &lt;option data-content=&quot;&lt;span class='text-primary'&gt;&lt;i class='fa fa-fw fa-twitter text-primary '&gt;&lt;/i&gt;&amp;nbsp;Twitter&lt;/span&gt;&quot; value=&quot;2&quot;&gt;Twitter&lt;/option&gt;
+    &lt;/select&gt;
+</code></pre>
+
+</section>
+
+<h6 id="title_1"><u><em>(title)</em></u></h6>
+<p><section>
+    <select class="four-boot">
+        <option title="public social media" value="twitter">facebook</option>
+        <option title="business social media" value="facebook">Facebook</option>
+        <option title="videos social media" value="youtube">Youtube</option>
+        <option title="photos social media" value="instagram">Instagram</option>
+    </select></p>
+<pre><code class="html">&lt;select class=&quot;four-boot&quot;&gt;
+    &lt;option title=&quot;public social media&quot; value=&quot;twitter&quot;&gt;facebook&lt;/option&gt;
+    &lt;option title=&quot;business social media&quot; value=&quot;facebook&quot;&gt;Facebook&lt;/option&gt;
+    &lt;option title=&quot;videos social media&quot; value=&quot;youtube&quot;&gt;Youtube&lt;/option&gt;
+    &lt;option title=&quot;photos social media&quot; value=&quot;instagram&quot;&gt;Instagram&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+
+<p></section>
+<hr></p>
+<h4 id="customize-dropoown-examples"><u><em>Customize dropoown examples</em></u></h4>
+<h6 id="height"><u><em>(height)</em></u></h6>
+<p><section>
+    <select class ="four-boot" multiple data-height="150px" name="fourboot_select">
+        <optgroup label='Fruits'>
+            <option value="1">Banana</option>
+            <option value="2">Apple</option>
+            <option value="3">Watermelon</option>
+            <option value="4">Carrot</option>
+            <option value="5">Pinapple</option>
+        </optgroup>
+        <optgroup label='Drinks'>
+            <option value="6">Coffee</option>
+            <option value="7">Tea</option>
+        </optgroup>
+    </select>
+    <select class ="four-boot" multiple data-height="220px" name="fourboot_select">
+        <optgroup label='Fruits'>
+            <option value="1">Banana</option>
+            <option value="2">Apple</option>
+            <option value="3">Watermelon</option>
+            <option value="4">Carrot</option>
+            <option value="5">Pinapple</option>
+        </optgroup>
+        <optgroup label='Drinks'>
+            <option value="6">Coffee</option>
+            <option value="7">Tea</option>
+        </optgroup>
+    </select></p>
+<pre><code class="html">    &lt;select class =&quot;four-boot&quot; data-height=&quot;150px&quot; name=&quot;fourboot_select&quot;&gt;
+        ...
+    &lt;/select&gt;
+    &lt;select class =&quot;four-boot&quot; data-height=&quot;220px&quot; name=&quot;fourboot_select&quot;&gt;
+        ...
+    &lt;/select&gt;
+</code></pre>
+
+</section>
+
+<h6 id="actions"><u><em>(actions)</em></u></h6>
+<p><section>
+<select class ="four-boot" multiple data-actions="true" name="fourboot_select">
+    <optgroup label='Fruits'>
+        <option value="1">Banana</option>
+        <option value="2">Apple</option>
+        <option value="3">Watermelon</option>
+        <option value="4">Carrot</option>
+        <option value="5">Pinapple</option>
+    </optgroup>
+    <optgroup label='Drinks'>
+        <option value="6">Coffee</option>
+        <option value="7">Tea</option>
+    </optgroup>
+</select></p>
+<pre><code class="html">    &lt;select class =&quot;four-boot&quot; multiple data-actions=&quot;true&quot; name=&quot;fourboot_select&quot;&gt;
+        ...
+    &lt;/select&gt;
+</code></pre>
+
+</section>
+
+<h6 id="custom-actions"><u><em>(custom actions)</em></u></h6>
+<p><section>
+    <select class="four-boot" multiple data-actions='["select-all"]' name="fourboot_select">
+        <optgroup label='Fruits'>
+            <option value="1">Banana</option>
+            <option value="2">Apple</option>
+            <option value="3">Watermelon</option>
+            <option value="4">Carrot</option>
+            <option value="5">Pinapple</option>
+        </optgroup>
+        <optgroup label='Drinks'>
+            <option value="6">Coffee</option>
+            <option value="7">Tea</option>
+        </optgroup>
+    </select></p>
+<pre><code class="html">    &lt;select class=&quot;four-boot&quot; data-actions='[&quot;select-all&quot;,&quot;select-all&quot;]'&gt;
+        ...
+    &lt;/select&gt;
+    &lt;select class=&quot;four-boot&quot; data-actions='[&quot;select-all&quot;]'&gt;
+        ...
+    &lt;/select&gt;
+    &lt;select class=&quot;four-boot&quot; data-actions='[&quot;deselect-all&quot;]'&gt;
+        ...
+    &lt;/select&gt;
+</code></pre>
+
+</section>
+
+<h6 id="divider"><u><em>(divider)</em></u></h6>
+<p><section>
+    <select class="four-boot"  name="fourboot_select">
+            <option value="1">Banana</option>
+            <option value="2">Apple</option>
+            <option value="3">Watermelon</option>
+            <option value="5">Pinapple</option>
+            <option data-divider></option>
+            <option value="4">Carrot</option>
+            <option data-divider></option>
+            <option value="6">Coffee</option>
+            <option value="7">Tea</option>
+    </select></p>
+<pre><code class="html">    &lt;select class=&quot;four-boot&quot;  name=&quot;fourboot_select&quot;&gt;
+        ...
+        &lt;option data-divider&gt;&lt;/option&gt;
+        ...
+        &lt;option data-divider&gt;&lt;/option&gt;
+        ...
+    &lt;/select&gt;
+</code></pre>
+
+</section>
+
+<h6 id="menu-header"><u><em>(menu header)</em></u></h6>
+<p><section>
+    <select class="four-boot" data-header="choose what you would like to eat/drink" name="fourboot_select">
+        <option value="1">Banana</option>
+        <option value="2">Apple</option>
+        <option value="3">Watermelon</option>
+        <option value="5">Pinapple</option>
+    </select></p>
+<pre><code class="html">&lt;select class=&quot;four-boot&quot; data-header=&quot;choose what you would like to eat/drink&quot;&gt;
+    &lt;option value=&quot;1&quot;&gt;Banana&lt;/option&gt;
+    &lt;option value=&quot;2&quot;&gt;Apple&lt;/option&gt;
+    &lt;option value=&quot;3&quot;&gt;Watermelon&lt;/option&gt;
+    &lt;option value=&quot;5&quot;&gt;Pinapple&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+
+<p></section>
+<hr></p>
+<h4 id="observer-examples"><u><em>Observer examples</em></u></h4>
+<p><small>monitor changes to select (add/remove) options and apply changes directly to dropdown</small></p>
+<h6 id="enabled"><u><em>(enabled)</em></u></h6>
+<p><section data-adder>
+    <select class ="four-boot"  data-observer-enabled="true" name="fourboot_select">
+        <optgroup label='Fruits'>
+            <option value="1">Banana</option>
+            <option value="2">Apple</option>
+            <option value="3">Watermelon</option>
+            <option value="4">Carrot</option>
+            <option value="5">Pinapple</option>
+        </optgroup>
+        <optgroup label='Drinks'>
+            <option value="6">Coffee</option>
+            <option value="7">Tea</option>
+        </optgroup>
+    </select></p>
+<pre><code class="html">    &amp;lt;!-- it's enabled by default --&amp;gt;
+    &lt;select class =&quot;four-boot&quot; data-observer-enabled=&quot;true&quot;&gt;
+        ...
+    &lt;/select&gt;
+</code></pre>
+
+<p><br>
+</section></p>
+<h6 id="disabled"><u><em>(disabled)</em></u></h6>
+<p><section data-adder>
+    <select class ="four-boot" data-observer-enabled="false" name="fourboot_select">
+        <optgroup label='Fruits'>
+            <option value="1">Banana</option>
+            <option value="2">Apple</option>
+            <option value="3">Watermelon</option>
+            <option value="4">Carrot</option>
+            <option value="5">Pinapple</option>
+        </optgroup>
+        <optgroup label='Drinks'>
+            <option value="6">Coffee</option>
+            <option value="7">Tea</option>
+        </optgroup>
+    </select></p>
+<pre><code class="html">    &lt;select class =&quot;four-boot&quot; data-observer-enabled=&quot;false&quot;&gt;
+        ...
+    &lt;/select&gt;
+</code></pre>
+
+<p><br>
+</section></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../methods/" title="Methods" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Methods
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.b438e6c5.js"></script>
+      
+      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
+      
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+      
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+      
+        <script src="../js/JQuery.four-boot.js"></script>
+      
+        <script src="../js/custom.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>

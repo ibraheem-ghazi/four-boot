@@ -1,0 +1,294 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "FourBoot Bootstrap Select Picker (Bootstrap 4)\n\n\njavascript library to convert html select into beautiful \nBootstrap 4\n dropdown\n\n\nDependencies:\n\n\n\n\nJQuery 1.8+\n\n\nBootstrap 4.0+ (preferred 4.1)\n\n\n\n\nCDNJS:\n\n\nThe folks at CDNJS host a copy of the library. The CDN is updated after the release is made public, which means there is a delay between the publishing of a release and its availability on the CDN, so keep that in mind. Just use these links:\n\n\nNot Supported Yet :(\n\n\n\n\nInstall with Bower:\n\n\nNot Supported Yet :(\n\n\n\n\nInstall with npm:\n\n\nNot Supported Yet :(\n\n\n\n\nInstall with NuGet:\n\n\nNot Supported Yet :(\n\n\n\n\nUsage:\n\n\nCreate your \nselect\n with the \n.four-boot-select\n class. The data-api will automatically theme these elements.\n\n\nselect class=\nfour-boot-select\n \n\n    \noption selected value=\napple\napple\n/option\n\n    \noption value=\nbanana\nbanana\n/option\n\n    \noption value=\nwatermelon\nwatermelon\n/option\n\n    \noption value=\nblueberries\nblueberries\n/option\n\n    \noption value=\napricots\napricots\n/option\n\n    \noption value=\ncantaloupe\ncantaloupe\n/option\n\n\n/select\n\n\n\n\n\nOptions can be passed via data attributes or JavaScript.\n\n\n$('select').fourBoot({\n    class:\nbtn-danger\n,\n    height:\n192px\n,\n    liveSearch:true\n});", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#fourboot-bootstrap-select-picker-bootstrap-4", 
+            "text": "javascript library to convert html select into beautiful  Bootstrap 4  dropdown", 
+            "title": "FourBoot Bootstrap Select Picker (Bootstrap 4)"
+        }, 
+        {
+            "location": "/#dependencies", 
+            "text": "JQuery 1.8+  Bootstrap 4.0+ (preferred 4.1)", 
+            "title": "Dependencies:"
+        }, 
+        {
+            "location": "/#cdnjs", 
+            "text": "The folks at CDNJS host a copy of the library. The CDN is updated after the release is made public, which means there is a delay between the publishing of a release and its availability on the CDN, so keep that in mind. Just use these links:  Not Supported Yet :(", 
+            "title": "CDNJS:"
+        }, 
+        {
+            "location": "/#install-with-bower", 
+            "text": "Not Supported Yet :(", 
+            "title": "Install with Bower:"
+        }, 
+        {
+            "location": "/#install-with-npm", 
+            "text": "Not Supported Yet :(", 
+            "title": "Install with npm:"
+        }, 
+        {
+            "location": "/#install-with-nuget", 
+            "text": "Not Supported Yet :(", 
+            "title": "Install with NuGet:"
+        }, 
+        {
+            "location": "/#usage", 
+            "text": "Create your  select  with the  .four-boot-select  class. The data-api will automatically theme these elements.  select class= four-boot-select   \n     option selected value= apple apple /option \n     option value= banana banana /option \n     option value= watermelon watermelon /option \n     option value= blueberries blueberries /option \n     option value= apricots apricots /option \n     option value= cantaloupe cantaloupe /option  /select   Options can be passed via data attributes or JavaScript.  $('select').fourBoot({\n    class: btn-danger ,\n    height: 192px ,\n    liveSearch:true\n});", 
+            "title": "Usage:"
+        }, 
+        {
+            "location": "/examples/", 
+            "text": ".text-bold{\n    font-weight: bold !important;\n}\n.hover-bg-black:hover{\n    background:black !important;\n    color:#fff !important;\n}\n.four-boot{\nmargin:10px 0px;\n}\narticle section {\n    border: 1px solid #ccc;\n    padding: 15px;\n    margin-bottom: 20px !important;\n}\narticle h6 {\n    margin-top: 80px !important;\n}\narticle h4 + h6 {\n    margin-top:40px !important;\n}\narticle section button.fix-mt{\n    margin-top: -30px !important;\n}\n/*conflict between theme and bootstrap 4 (fix)*/\n.btn{\n    font-size:1.6rem;\n}\n.dropdown-item{\n    font-size: 16px;\n    font-weight: 400;\n    line-height: 1.5;\n}\n.dropdown-header {\n    font-size: 14px;\n    margin: 0px !important;\n}\n/********************************/\n#modal{\n    font-size:16px !important;\n    font-weight:400 !important;\n    line-height:1rem !important;\n}\npre{\nmargin:0px;\n}\n\n\n\n\nFourBoot Bootstrap Select Picker (Bootstrap 4)\n\n\njavascript library to convert html select into beautiful \nBootstrap 4\n dropdown\n\n\nExamples:\n\n\nStandard examples\n\n\n(single)\n\n\n\n    \n\n        \nBanana\n\n        \nApple\n\n        \nWatermelon\n\n        \nCarrot\n\n        \nPinapple\n\n    \n\n\n    \nselect class =\nfour-boot\n name=\nfourboot_select\n\n        \noption value=\n1\nBanana\n/option\n\n        \noption value=\n2\nApple\n/option\n\n        \noption value=\n3\nWatermelon\n/option\n\n        \noption value=\n4\nCarrot\n/option\n\n        \noption value=\n5\nPinapple\n/option\n\n    \n/select\n\n\n\n\n\n\n\n\n(optgroup)\n\n\n\n    \n\n        \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n        \n\n        \n\n            \nCoffee\n\n            \nTea\n\n        \n\n    \n\n\nselect class =\nfour-boot\n name=\nfourboot_select\n\n    \noptgroup label='Fruits'\n\n        \noption value=\n1\nBanana\n/option\n\n        \noption value=\n2\nApple\n/option\n\n        \noption value=\n3\nWatermelon\n/option\n\n        \noption value=\n4\nCarrot\n/option\n\n        \noption value=\n5\nPinapple\n/option\n\n    \n/optgroup\n\n    \noptgroup label='Drinks'\n\n        \noption value=\n6\nCoffee\n/option\n\n        \noption value=\n7\nTea\n/option\n\n    \n/optgroup\n\n\n/select\n\n\n\n\n\n\n\n\n(multiple)\n\n\n\n    \n\n        \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n        \n\n        \n\n            \nCoffee\n\n            \nTea\n\n        \n\n    \n\n\nselect class =\nfour-boot\n multiple name=\nfourboot_select\n\n        \noptgroup label='Fruits'\n\n            \noption value=\n1\nBanana\n/option\n\n            \noption value=\n2\nApple\n/option\n\n            \noption value=\n3\nWatermelon\n/option\n\n            \noption value=\n4\nCarrot\n/option\n\n            \noption value=\n5\nPinapple\n/option\n\n        \n/optgroup\n\n        \noptgroup label='Drinks'\n\n            \noption value=\n6\nCoffee\n/option\n\n            \noption value=\n7\nTea\n/option\n\n        \n/optgroup\n\n    \n/select\n\n\n\n\n\n\n\n\n\nLive search examples\n\n\n(default)\n\n\n\n    \n\n        \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n        \n\n        \n\n            \nCoffee\n\n            \nTea\n\n        \n\n    \n\n\nselect class =\nfour-boot\n multiple data-live-search=\ntrue\n name=\nfourboot_select\n\n        \noptgroup label='Fruits'\n\n            \noption value=\n1\nBanana\n/option\n\n            \noption value=\n2\nApple\n/option\n\n            \noption value=\n3\nWatermelon\n/option\n\n            \noption value=\n4\nCarrot\n/option\n\n            \noption value=\n5\nPinapple\n/option\n\n        \n/optgroup\n\n        \noptgroup label='Drinks'\n\n            \noption value=\n6\nCoffee\n/option\n\n            \noption value=\n7\nTea\n/option\n\n        \n/optgroup\n\n    \n/select\n\n\n\n\n\n\n\n\n(case sensitive)\n\n\n\n    \n\n        \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n        \n\n        \n\n            \nCoffee\n\n            \nTea\n\n        \n\n    \n\n\n    \nselect class =\nfour-boot\n multiple data-live-search=\ntrue\n data-live-search-case-sensitive=\ntrue\n name=\nfourboot_select\n\n        \noptgroup label='Fruits'\n\n            \noption value=\n1\nBanana\n/option\n\n            \noption value=\n2\nApple\n/option\n\n            \noption value=\n3\nWatermelon\n/option\n\n            \noption value=\n4\nCarrot\n/option\n\n            \noption value=\n5\nPinapple\n/option\n\n        \n/optgroup\n\n        \noptgroup label='Drinks'\n\n            \noption value=\n6\nCoffee\n/option\n\n            \noption value=\n7\nTea\n/option\n\n        \n/optgroup\n\n    \n/select\n\n\n\n\n\n\n\n\n(tokens)\n\n\ntry search for fruit colors: yellow, red, green, orange, brown\n\n\n    \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n    \n\n\nselect class =\nfour-boot\n multiple data-live-search=\ntrue\n data-live-search-case-sensitive=\ntrue\n name=\nfourboot_select\n\n        \noption value=\n1\n data-tokens=\nyellow\nBanana\n/option\n\n        \noption value=\n2\n data-tokens=\nred, green\nApple\n/option\n\n        \noption value=\n3\n data-tokens=\ngreen\nWatermelon\n/option\n\n        \noption value=\n4\n data-tokens=\norange\nCarrot\n/option\n\n        \noption value=\n5\n data-tokens=\nbrown, yellow, green\nPinapple\n/option\n\n\n/select\n\n\n\n\n\n\n\n\n\nMax Options examples\n\n\n(select)\n\n\n\n    \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n    \n\n\nselect class =\nfour-boot\n multiple data-max-options=\n2\n name=\nfourboot_select\n\n        \noption value=\n1\n data-tokens=\nyellow\nBanana\n/option\n\n        \noption value=\n2\n data-tokens=\nred, green\nApple\n/option\n\n        \noption value=\n3\n data-tokens=\ngreen\nWatermelon\n/option\n\n        \noption value=\n4\n data-tokens=\norange\nCarrot\n/option\n\n        \noption value=\n5\n data-tokens=\nbrown, yellow, green\nPinapple\n/option\n\n\n/select\n\n\n\n\n\n\n\n\n(optgroup)\n\n\n\n    \n\n        \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n        \n\n        \n\n            \nCoffee\n\n            \nTea\n\n        \n\n    \n\n\n    \nselect class =\nfour-boot\n multiple name=\nfourboot_select\n\n        \noptgroup label='Fruits' data-max-options=\n3\n \n\n            \noption value=\n1\nBanana\n/option\n\n            \noption value=\n2\nApple\n/option\n\n            \noption value=\n3\nWatermelon\n/option\n\n            \noption value=\n4\nCarrot\n/option\n\n            \noption value=\n5\nPinapple\n/option\n\n        \n/optgroup\n\n        \noptgroup label='Drinks' data-max-options=\n1\n\n            \noption value=\n6\nCoffee\n/option\n\n            \noption value=\n7\nTea\n/option\n\n        \n/optgroup\n\n    \n/select\n\n\n\n\n\n\n\n\n\nButton text examples\n\n\n(title)\n\n\n\n    \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n    \n\n\nselect class=\nfour-boot\n multiple title=\nthis from title\n name=\nfourboot_select\n\n        \noption value=\n1\nBanana\n/option\n\n        \noption value=\n2\nApple\n/option\n\n        \noption value=\n3\nWatermelon\n/option\n\n        \noption value=\n4\nCarrot\n/option\n\n        \noption value=\n5\nPinapple\n/option\n\n\n/select\n\n\n\n\n\n\n\n\n(placeholder / data-placeholder)\n\n\n\n    \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n    \n\n\n    \nselect class=\nfour-boot\n multiple title=\nthis from data-placeholder\n name=\nfourboot_select\n\n            \noption value=\n1\nBanana\n/option\n\n            \noption value=\n2\nApple\n/option\n\n            \noption value=\n3\nWatermelon\n/option\n\n            \noption value=\n4\nCarrot\n/option\n\n            \noption value=\n5\nPinapple\n/option\n\n    \n/select\n\n\n\n\n\n\n\n\n(selected item with title set)\n\n\n\n    \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n    \n\n\nselect class=\nfour-boot\n multiple title=\nselect option from list\n name=\nfourboot_select\n\n        \noption value=\n1\n selected\nBanana\n/option\n\n        \noption value=\n2\n selected\nApple\n/option\n\n        \noption value=\n3\nWatermelon\n/option\n\n        \noption value=\n4\nCarrot\n/option\n\n        \noption value=\n5\nPinapple\n/option\n\n\n/select\n\n\n\n\n\n\n\n\n\nSelected button text examples\n\n\n(mutliple separator text)\n\n\n\n    \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n    \n\n\n    \nselect class=\nfour-boot\n multiple data-multiple-selected-separator=\n | \n name=\nfourboot_select\n\n        ...\n    \n/select\n\n\n\n\n\n\n\n\n(option title attribute)\n\n\n\n    \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n    \n\n\nselect class=\nfour-boot\n multiple data-multiple-selected-separator=\n | \n name=\nfourboot_select\n\n    \noption title=\nBanana is yellow\n value=\n1\nBanana\n/option\n\n    \noption title=\nApple is red\n value=\n2\nApple\n/option\n\n    \noption title=\nWatermelon is green\n value=\n3\nWatermelon\n/option\n\n    \noption title=\nCarrot is orange\n value=\n4\nCarrot\n/option\n\n    \noption title=\nPinapple is brown\n value=\n5\nPinapple\n/option\n\n\n/select\n\n\n\n\n\n\n\n\n\nMultiple selected button format examples\n\n\n(static)\n\n\n\n    \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n    \n\n\n    \nselect class=\nfour-boot\n multiple data-selected-text-format=\nstatic\n title=\nstatic title/placeholder\n name=\nfourboot_select\n\n        ...\n    \n/select\n\n\n\n\n\n\n\n\n(values)\n\n\n\n    \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n    \n\n\n    \nselect class=\nfour-boot\n multiple data-selected-text-format=\nvalues\n name=\nfourboot_select\n\n        ...\n    \n/select\n\n\n\n\n\n\n\n\n(count)\n\n\n\n    \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n    \n\n\n    \nselect class=\nfour-boot\n multiple data-selected-text-format=\ncount\n name=\nfourboot_select\n\n        ...\n    \n/select\n\n\n\n\n\n\n\n\n(count \n X)\n\n\nin this example \ncount \n 3\n\n\n\n    \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n    \n\n\n    \nselect class=\nfour-boot\n multiple data-selected-text-format=\ncount \ngt; 3\n name=\nfourboot_select\n\n        ...\n    \n/select\n\n    \nselect class=\nfour-boot\n multiple data-selected-text-format=\ncount \n 3\n name=\nfourboot_select\n\n        ...\n    \n/select\n\n\n\n\n\n\n\n\n\n\n\nStyling examples\n\n\n(button styling)\n\n\nuse attribute \nclass\n to append classes to default\n\n\nuse attribute \ndata-class\n to replace default classes\n\n\n\n    \n\n        \nBanana\n\n        \nApple\n\n        \nWatermelon\n\n        \nCarrot\n\n        \nPinapple\n\n    \n\n    \n\n        \nBanana\n\n        \nApple\n\n        \nWatermelon\n\n        \nCarrot\n\n        \nPinapple\n\n    \n\n    \n\n        \nBanana\n\n        \nApple\n\n        \nWatermelon\n\n        \nCarrot\n\n        \nPinapple\n\n    \n\n    \n\n        \nBanana\n\n        \nApple\n\n        \nWatermelon\n\n        \nCarrot\n\n        \nPinapple\n\n    \n\n    \n\n        \nBanana\n\n        \nApple\n\n        \nWatermelon\n\n        \nCarrot\n\n        \nPinapple\n\n    \n\n\n    \nselect class =\nfour-boot\n data-class=\nbtn-primary\n name=\nfourboot_select\n\n        ...\n    \n/select\n\n    \nselect class =\nfour-boot\n data-class=\nbtn-info\n name=\nfourboot_select\n\n        ...\n    \n/select\n\n    \nselect class =\nfour-boot\n data-class=\nbtn-warning\n name=\nfourboot_select\n\n        ...\n    \n/select\n\n    \nselect class =\nfour-boot\n data-class=\nbtn-danger\n name=\nfourboot_select\n\n        ...\n    \n/select\n\n    \nselect class =\nfour-boot\n data-class=\nbtn-outline-danger\n name=\nfourboot_select\n\n        ...\n    \n/select\n\n\n\n\n\n\n\n\n(dropdown styling)\n\n\n\n    \n\n        \nBanana\n\n        \nApple\n\n        \nWatermelon\n\n        \nCarrot\n\n        \nPinapple\n\n    \n\n    \n\n        \nBanana\n\n        \nApple\n\n        \nWatermelon\n\n        \nCarrot\n\n        \nPinapple\n\n    \n\n\n    \nselect class =\nfour-boot\n data-dropdown-class=\ndropleft\n name=\nfourboot_select\n\n        ...\n    \n/select\n\n    \nselect class =\nfour-boot\n data-dropdown-class=\ndropright\n name=\nfourboot_select\n\n        ...\n    \n/select\n\n\n\n\n\n\n\n\n(style individual options)\n\n\n\n    \n\n        \nBanana\n\n        \nApple\n\n        \nWatermelon\n\n        \nCarrot\n\n        \nPinapple\n\n    \n\n\n    \nselect class =\nfour-boot\n data-dropdown-class=\ndropright\n name=\nfourboot_select\n\n        \noption data-class=\ntext-primary hover-bg-black\n value=\n1\nBanana\n/option\n\n        \noption data-class=\ntext-info hover-bg-black\n value=\n2\nApple\n/option\n\n        \noption data-class=\ntext-warning hover-bg-black\n value=\n3\nWatermelon\n/option\n\n        \noption data-class=\ntext-danger hover-bg-black\n value=\n4\nCarrot\n/option\n\n        \noption data-class=\ntext-bold hover-bg-black\n value=\n5\nPinapple\n/option\n\n    \n/select\n\n\n\n\n\n\n\n\n\nCustomize options examples\n\n\n(icons)\n\n\n\n    \n\n        \nTwitter\n\n        \nFacebook\n\n        \nYoutube\n\n        \nInstagram\n\n        \nTelegram\n\n    \n\n\n    \nselect class=\nfour-boot\n\n        \noption data-icon=\nfa fa-twitter\n value=\ntwitter\nTwitter\n/option\n\n        \noption data-icon=\nfa fa-facebook\n value=\nfacebook\nFacebook\n/option\n\n        \noption data-icon=\nfa fa-youtube\n value=\nyoutube\nYoutube\n/option\n\n        \noption data-icon=\nfa fa-instagram\n value=\ninstagram\nInstagram\n/option\n\n        \noption data-icon=\nfa fa-telegram\n value=\ntelegram\nTelegram\n/option\n\n    \n/select\n\n\n\n\n\n\n\n\n(content)\n\n\n\n    \n\n        \n\n        \n\n    \n\n\n    \nselect class=\nfour-boot\n\n        \noption data-content=\nspan class='text-danger'\ni class='fa fa-fw fa-google-plus text-primary '\n/i\nnbsp;Google Plus\n/span\n value=\n1\nGoogle Plus\n/option\n\n        \noption data-content=\nspan class='text-primary'\ni class='fa fa-fw fa-twitter text-primary '\n/i\nnbsp;Twitter\n/span\n value=\n2\nTwitter\n/option\n\n    \n/select\n\n\n\n\n\n\n\n\n(title)\n\n\n\n    \n\n        \nfacebook\n\n        \nFacebook\n\n        \nYoutube\n\n        \nInstagram\n\n    \n\n\nselect class=\nfour-boot\n\n    \noption title=\npublic social media\n value=\ntwitter\nfacebook\n/option\n\n    \noption title=\nbusiness social media\n value=\nfacebook\nFacebook\n/option\n\n    \noption title=\nvideos social media\n value=\nyoutube\nYoutube\n/option\n\n    \noption title=\nphotos social media\n value=\ninstagram\nInstagram\n/option\n\n\n/select\n\n\n\n\n\n\n\n\n\nCustomize dropoown examples\n\n\n(height)\n\n\n\n    \n\n        \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n        \n\n        \n\n            \nCoffee\n\n            \nTea\n\n        \n\n    \n\n    \n\n        \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n        \n\n        \n\n            \nCoffee\n\n            \nTea\n\n        \n\n    \n\n\n    \nselect class =\nfour-boot\n data-height=\n150px\n name=\nfourboot_select\n\n        ...\n    \n/select\n\n    \nselect class =\nfour-boot\n data-height=\n220px\n name=\nfourboot_select\n\n        ...\n    \n/select\n\n\n\n\n\n\n\n\n(actions)\n\n\n\n\n\n    \n\n        \nBanana\n\n        \nApple\n\n        \nWatermelon\n\n        \nCarrot\n\n        \nPinapple\n\n    \n\n    \n\n        \nCoffee\n\n        \nTea\n\n    \n\n\n\n\n    \nselect class =\nfour-boot\n multiple data-actions=\ntrue\n name=\nfourboot_select\n\n        ...\n    \n/select\n\n\n\n\n\n\n\n\n(custom actions)\n\n\n\n    \n\n        \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n        \n\n        \n\n            \nCoffee\n\n            \nTea\n\n        \n\n    \n\n\n    \nselect class=\nfour-boot\n data-actions='[\nselect-all\n,\nselect-all\n]'\n\n        ...\n    \n/select\n\n    \nselect class=\nfour-boot\n data-actions='[\nselect-all\n]'\n\n        ...\n    \n/select\n\n    \nselect class=\nfour-boot\n data-actions='[\ndeselect-all\n]'\n\n        ...\n    \n/select\n\n\n\n\n\n\n\n\n(divider)\n\n\n\n    \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nPinapple\n\n            \n\n            \nCarrot\n\n            \n\n            \nCoffee\n\n            \nTea\n\n    \n\n\n    \nselect class=\nfour-boot\n  name=\nfourboot_select\n\n        ...\n        \noption data-divider\n/option\n\n        ...\n        \noption data-divider\n/option\n\n        ...\n    \n/select\n\n\n\n\n\n\n\n\n(menu header)\n\n\n\n    \n\n        \nBanana\n\n        \nApple\n\n        \nWatermelon\n\n        \nPinapple\n\n    \n\n\nselect class=\nfour-boot\n data-header=\nchoose what you would like to eat/drink\n\n    \noption value=\n1\nBanana\n/option\n\n    \noption value=\n2\nApple\n/option\n\n    \noption value=\n3\nWatermelon\n/option\n\n    \noption value=\n5\nPinapple\n/option\n\n\n/select\n\n\n\n\n\n\n\n\n\nObserver examples\n\n\nmonitor changes to select (add/remove) options and apply changes directly to dropdown\n\n\n(enabled)\n\n\n\n    \n\n        \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n        \n\n        \n\n            \nCoffee\n\n            \nTea\n\n        \n\n    \n\n\n    \nlt;!-- it's enabled by default --\ngt;\n    \nselect class =\nfour-boot\n data-observer-enabled=\ntrue\n\n        ...\n    \n/select\n\n\n\n\n\n\n\n\n\n(disabled)\n\n\n\n    \n\n        \n\n            \nBanana\n\n            \nApple\n\n            \nWatermelon\n\n            \nCarrot\n\n            \nPinapple\n\n        \n\n        \n\n            \nCoffee\n\n            \nTea\n\n        \n\n    \n\n\n    \nselect class =\nfour-boot\n data-observer-enabled=\nfalse\n\n        ...\n    \n/select", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/examples/#fourboot-bootstrap-select-picker-bootstrap-4", 
+            "text": "javascript library to convert html select into beautiful  Bootstrap 4  dropdown", 
+            "title": "FourBoot Bootstrap Select Picker (Bootstrap 4)"
+        }, 
+        {
+            "location": "/examples/#examples", 
+            "text": "", 
+            "title": "Examples:"
+        }, 
+        {
+            "location": "/examples/#standard-examples", 
+            "text": "", 
+            "title": "Standard examples"
+        }, 
+        {
+            "location": "/examples/#single", 
+            "text": "Banana \n         Apple \n         Watermelon \n         Carrot \n         Pinapple \n           select class = four-boot  name= fourboot_select \n         option value= 1 Banana /option \n         option value= 2 Apple /option \n         option value= 3 Watermelon /option \n         option value= 4 Carrot /option \n         option value= 5 Pinapple /option \n     /select", 
+            "title": "(single)"
+        }, 
+        {
+            "location": "/examples/#optgroup", 
+            "text": "Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n         \n         \n             Coffee \n             Tea \n         \n      select class = four-boot  name= fourboot_select \n     optgroup label='Fruits' \n         option value= 1 Banana /option \n         option value= 2 Apple /option \n         option value= 3 Watermelon /option \n         option value= 4 Carrot /option \n         option value= 5 Pinapple /option \n     /optgroup \n     optgroup label='Drinks' \n         option value= 6 Coffee /option \n         option value= 7 Tea /option \n     /optgroup  /select", 
+            "title": "(optgroup)"
+        }, 
+        {
+            "location": "/examples/#multiple", 
+            "text": "Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n         \n         \n             Coffee \n             Tea \n         \n      select class = four-boot  multiple name= fourboot_select \n         optgroup label='Fruits' \n             option value= 1 Banana /option \n             option value= 2 Apple /option \n             option value= 3 Watermelon /option \n             option value= 4 Carrot /option \n             option value= 5 Pinapple /option \n         /optgroup \n         optgroup label='Drinks' \n             option value= 6 Coffee /option \n             option value= 7 Tea /option \n         /optgroup \n     /select", 
+            "title": "(multiple)"
+        }, 
+        {
+            "location": "/examples/#live-search-examples", 
+            "text": "", 
+            "title": "Live search examples"
+        }, 
+        {
+            "location": "/examples/#default", 
+            "text": "Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n         \n         \n             Coffee \n             Tea \n         \n      select class = four-boot  multiple data-live-search= true  name= fourboot_select \n         optgroup label='Fruits' \n             option value= 1 Banana /option \n             option value= 2 Apple /option \n             option value= 3 Watermelon /option \n             option value= 4 Carrot /option \n             option value= 5 Pinapple /option \n         /optgroup \n         optgroup label='Drinks' \n             option value= 6 Coffee /option \n             option value= 7 Tea /option \n         /optgroup \n     /select", 
+            "title": "(default)"
+        }, 
+        {
+            "location": "/examples/#case-sensitive", 
+            "text": "Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n         \n         \n             Coffee \n             Tea \n         \n           select class = four-boot  multiple data-live-search= true  data-live-search-case-sensitive= true  name= fourboot_select \n         optgroup label='Fruits' \n             option value= 1 Banana /option \n             option value= 2 Apple /option \n             option value= 3 Watermelon /option \n             option value= 4 Carrot /option \n             option value= 5 Pinapple /option \n         /optgroup \n         optgroup label='Drinks' \n             option value= 6 Coffee /option \n             option value= 7 Tea /option \n         /optgroup \n     /select", 
+            "title": "(case sensitive)"
+        }, 
+        {
+            "location": "/examples/#tokens", 
+            "text": "try search for fruit colors: yellow, red, green, orange, brown \n     \n             Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n      select class = four-boot  multiple data-live-search= true  data-live-search-case-sensitive= true  name= fourboot_select \n         option value= 1  data-tokens= yellow Banana /option \n         option value= 2  data-tokens= red, green Apple /option \n         option value= 3  data-tokens= green Watermelon /option \n         option value= 4  data-tokens= orange Carrot /option \n         option value= 5  data-tokens= brown, yellow, green Pinapple /option  /select", 
+            "title": "(tokens)"
+        }, 
+        {
+            "location": "/examples/#max-options-examples", 
+            "text": "", 
+            "title": "Max Options examples"
+        }, 
+        {
+            "location": "/examples/#select", 
+            "text": "Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n      select class = four-boot  multiple data-max-options= 2  name= fourboot_select \n         option value= 1  data-tokens= yellow Banana /option \n         option value= 2  data-tokens= red, green Apple /option \n         option value= 3  data-tokens= green Watermelon /option \n         option value= 4  data-tokens= orange Carrot /option \n         option value= 5  data-tokens= brown, yellow, green Pinapple /option  /select", 
+            "title": "(select)"
+        }, 
+        {
+            "location": "/examples/#optgroup_1", 
+            "text": "Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n         \n         \n             Coffee \n             Tea \n         \n           select class = four-boot  multiple name= fourboot_select \n         optgroup label='Fruits' data-max-options= 3   \n             option value= 1 Banana /option \n             option value= 2 Apple /option \n             option value= 3 Watermelon /option \n             option value= 4 Carrot /option \n             option value= 5 Pinapple /option \n         /optgroup \n         optgroup label='Drinks' data-max-options= 1 \n             option value= 6 Coffee /option \n             option value= 7 Tea /option \n         /optgroup \n     /select", 
+            "title": "(optgroup)"
+        }, 
+        {
+            "location": "/examples/#button-text-examples", 
+            "text": "", 
+            "title": "Button text examples"
+        }, 
+        {
+            "location": "/examples/#title", 
+            "text": "Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n      select class= four-boot  multiple title= this from title  name= fourboot_select \n         option value= 1 Banana /option \n         option value= 2 Apple /option \n         option value= 3 Watermelon /option \n         option value= 4 Carrot /option \n         option value= 5 Pinapple /option  /select", 
+            "title": "(title)"
+        }, 
+        {
+            "location": "/examples/#placeholder-data-placeholder", 
+            "text": "Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n           select class= four-boot  multiple title= this from data-placeholder  name= fourboot_select \n             option value= 1 Banana /option \n             option value= 2 Apple /option \n             option value= 3 Watermelon /option \n             option value= 4 Carrot /option \n             option value= 5 Pinapple /option \n     /select", 
+            "title": "(placeholder / data-placeholder)"
+        }, 
+        {
+            "location": "/examples/#selected-item-with-title-set", 
+            "text": "Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n      select class= four-boot  multiple title= select option from list  name= fourboot_select \n         option value= 1  selected Banana /option \n         option value= 2  selected Apple /option \n         option value= 3 Watermelon /option \n         option value= 4 Carrot /option \n         option value= 5 Pinapple /option  /select", 
+            "title": "(selected item with title set)"
+        }, 
+        {
+            "location": "/examples/#selected-button-text-examples", 
+            "text": "", 
+            "title": "Selected button text examples"
+        }, 
+        {
+            "location": "/examples/#mutliple-separator-text", 
+            "text": "Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n           select class= four-boot  multiple data-multiple-selected-separator=  |   name= fourboot_select \n        ...\n     /select", 
+            "title": "(mutliple separator text)"
+        }, 
+        {
+            "location": "/examples/#option-title-attribute", 
+            "text": "Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n      select class= four-boot  multiple data-multiple-selected-separator=  |   name= fourboot_select \n     option title= Banana is yellow  value= 1 Banana /option \n     option title= Apple is red  value= 2 Apple /option \n     option title= Watermelon is green  value= 3 Watermelon /option \n     option title= Carrot is orange  value= 4 Carrot /option \n     option title= Pinapple is brown  value= 5 Pinapple /option  /select", 
+            "title": "(option title attribute)"
+        }, 
+        {
+            "location": "/examples/#multiple-selected-button-format-examples", 
+            "text": "", 
+            "title": "Multiple selected button format examples"
+        }, 
+        {
+            "location": "/examples/#static", 
+            "text": "Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n           select class= four-boot  multiple data-selected-text-format= static  title= static title/placeholder  name= fourboot_select \n        ...\n     /select", 
+            "title": "(static)"
+        }, 
+        {
+            "location": "/examples/#values", 
+            "text": "Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n           select class= four-boot  multiple data-selected-text-format= values  name= fourboot_select \n        ...\n     /select", 
+            "title": "(values)"
+        }, 
+        {
+            "location": "/examples/#count", 
+            "text": "Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n           select class= four-boot  multiple data-selected-text-format= count  name= fourboot_select \n        ...\n     /select", 
+            "title": "(count)"
+        }, 
+        {
+            "location": "/examples/#count-x", 
+            "text": "in this example  count   3  \n     \n             Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n           select class= four-boot  multiple data-selected-text-format= count  gt; 3  name= fourboot_select \n        ...\n     /select \n     select class= four-boot  multiple data-selected-text-format= count   3  name= fourboot_select \n        ...\n     /select", 
+            "title": "(count &gt; X)"
+        }, 
+        {
+            "location": "/examples/#styling-examples", 
+            "text": "", 
+            "title": "Styling examples"
+        }, 
+        {
+            "location": "/examples/#button-styling", 
+            "text": "use attribute  class  to append classes to default  use attribute  data-class  to replace default classes  \n     \n         Banana \n         Apple \n         Watermelon \n         Carrot \n         Pinapple \n     \n     \n         Banana \n         Apple \n         Watermelon \n         Carrot \n         Pinapple \n     \n     \n         Banana \n         Apple \n         Watermelon \n         Carrot \n         Pinapple \n     \n     \n         Banana \n         Apple \n         Watermelon \n         Carrot \n         Pinapple \n     \n     \n         Banana \n         Apple \n         Watermelon \n         Carrot \n         Pinapple \n           select class = four-boot  data-class= btn-primary  name= fourboot_select \n        ...\n     /select \n     select class = four-boot  data-class= btn-info  name= fourboot_select \n        ...\n     /select \n     select class = four-boot  data-class= btn-warning  name= fourboot_select \n        ...\n     /select \n     select class = four-boot  data-class= btn-danger  name= fourboot_select \n        ...\n     /select \n     select class = four-boot  data-class= btn-outline-danger  name= fourboot_select \n        ...\n     /select", 
+            "title": "(button styling)"
+        }, 
+        {
+            "location": "/examples/#dropdown-styling", 
+            "text": "Banana \n         Apple \n         Watermelon \n         Carrot \n         Pinapple \n     \n     \n         Banana \n         Apple \n         Watermelon \n         Carrot \n         Pinapple \n           select class = four-boot  data-dropdown-class= dropleft  name= fourboot_select \n        ...\n     /select \n     select class = four-boot  data-dropdown-class= dropright  name= fourboot_select \n        ...\n     /select", 
+            "title": "(dropdown styling)"
+        }, 
+        {
+            "location": "/examples/#style-individual-options", 
+            "text": "Banana \n         Apple \n         Watermelon \n         Carrot \n         Pinapple \n           select class = four-boot  data-dropdown-class= dropright  name= fourboot_select \n         option data-class= text-primary hover-bg-black  value= 1 Banana /option \n         option data-class= text-info hover-bg-black  value= 2 Apple /option \n         option data-class= text-warning hover-bg-black  value= 3 Watermelon /option \n         option data-class= text-danger hover-bg-black  value= 4 Carrot /option \n         option data-class= text-bold hover-bg-black  value= 5 Pinapple /option \n     /select", 
+            "title": "(style individual options)"
+        }, 
+        {
+            "location": "/examples/#customize-options-examples", 
+            "text": "", 
+            "title": "Customize options examples"
+        }, 
+        {
+            "location": "/examples/#icons", 
+            "text": "Twitter \n         Facebook \n         Youtube \n         Instagram \n         Telegram \n           select class= four-boot \n         option data-icon= fa fa-twitter  value= twitter Twitter /option \n         option data-icon= fa fa-facebook  value= facebook Facebook /option \n         option data-icon= fa fa-youtube  value= youtube Youtube /option \n         option data-icon= fa fa-instagram  value= instagram Instagram /option \n         option data-icon= fa fa-telegram  value= telegram Telegram /option \n     /select", 
+            "title": "(icons)"
+        }, 
+        {
+            "location": "/examples/#content", 
+            "text": "select class= four-boot \n         option data-content= span class='text-danger' i class='fa fa-fw fa-google-plus text-primary ' /i nbsp;Google Plus /span  value= 1 Google Plus /option \n         option data-content= span class='text-primary' i class='fa fa-fw fa-twitter text-primary ' /i nbsp;Twitter /span  value= 2 Twitter /option \n     /select", 
+            "title": "(content)"
+        }, 
+        {
+            "location": "/examples/#title_1", 
+            "text": "facebook \n         Facebook \n         Youtube \n         Instagram \n      select class= four-boot \n     option title= public social media  value= twitter facebook /option \n     option title= business social media  value= facebook Facebook /option \n     option title= videos social media  value= youtube Youtube /option \n     option title= photos social media  value= instagram Instagram /option  /select", 
+            "title": "(title)"
+        }, 
+        {
+            "location": "/examples/#customize-dropoown-examples", 
+            "text": "", 
+            "title": "Customize dropoown examples"
+        }, 
+        {
+            "location": "/examples/#height", 
+            "text": "Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n         \n         \n             Coffee \n             Tea \n         \n     \n     \n         \n             Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n         \n         \n             Coffee \n             Tea \n         \n           select class = four-boot  data-height= 150px  name= fourboot_select \n        ...\n     /select \n     select class = four-boot  data-height= 220px  name= fourboot_select \n        ...\n     /select", 
+            "title": "(height)"
+        }, 
+        {
+            "location": "/examples/#actions", 
+            "text": "Banana \n         Apple \n         Watermelon \n         Carrot \n         Pinapple \n     \n     \n         Coffee \n         Tea \n            select class = four-boot  multiple data-actions= true  name= fourboot_select \n        ...\n     /select", 
+            "title": "(actions)"
+        }, 
+        {
+            "location": "/examples/#custom-actions", 
+            "text": "Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n         \n         \n             Coffee \n             Tea \n         \n           select class= four-boot  data-actions='[ select-all , select-all ]' \n        ...\n     /select \n     select class= four-boot  data-actions='[ select-all ]' \n        ...\n     /select \n     select class= four-boot  data-actions='[ deselect-all ]' \n        ...\n     /select", 
+            "title": "(custom actions)"
+        }, 
+        {
+            "location": "/examples/#divider", 
+            "text": "Banana \n             Apple \n             Watermelon \n             Pinapple \n             \n             Carrot \n             \n             Coffee \n             Tea \n           select class= four-boot   name= fourboot_select \n        ...\n         option data-divider /option \n        ...\n         option data-divider /option \n        ...\n     /select", 
+            "title": "(divider)"
+        }, 
+        {
+            "location": "/examples/#menu-header", 
+            "text": "Banana \n         Apple \n         Watermelon \n         Pinapple \n      select class= four-boot  data-header= choose what you would like to eat/drink \n     option value= 1 Banana /option \n     option value= 2 Apple /option \n     option value= 3 Watermelon /option \n     option value= 5 Pinapple /option  /select", 
+            "title": "(menu header)"
+        }, 
+        {
+            "location": "/examples/#observer-examples", 
+            "text": "monitor changes to select (add/remove) options and apply changes directly to dropdown", 
+            "title": "Observer examples"
+        }, 
+        {
+            "location": "/examples/#enabled", 
+            "text": "Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n         \n         \n             Coffee \n             Tea \n         \n           lt;!-- it's enabled by default -- gt;\n     select class = four-boot  data-observer-enabled= true \n        ...\n     /select", 
+            "title": "(enabled)"
+        }, 
+        {
+            "location": "/examples/#disabled", 
+            "text": "Banana \n             Apple \n             Watermelon \n             Carrot \n             Pinapple \n         \n         \n             Coffee \n             Tea \n         \n           select class = four-boot  data-observer-enabled= false \n        ...\n     /select", 
+            "title": "(disabled)"
+        }, 
+        {
+            "location": "/methods/", 
+            "text": "FourBoot Bootstrap Select Picker (Bootstrap 4)\n\n\njavascript library to convert html select into beautiful \nBootstrap 4\n dropdown\n\n\nMethods:\n\n\nhere is a list of all available methods allow yoiu to get or modify select dropdown\n\n\n\n\n\n\n\n\nName\n\n\nparam1\n\n\nparam2\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nreset\n\n\n-\n\n\n-\n\n\nre-read configuration from \ndata-\n attributes and passed configuration to js code then update and re-write the dropdown\n\n\n\n\n\n\nupdate\n\n\n-\n\n\n-\n\n\nupdate and re-write the dropdown\n\n\n\n\n\n\nval\n\n\ninteger\n\n\nstring\n\n\narray\n\n\n\n\n\n\ndisabled\n\n\nboolean\n\n\n-\n\n\ndisable/enable the select and it's dropdown\n\n\n\n\n\n\ntoggle\n\n\n-\n\n\n-\n\n\nopen or close the dropdown menu for select dropdown\n\n\n\n\n\n\nhide\n\n\n-\n\n\n-\n\n\nhide the select dropdown\n\n\n\n\n\n\nshow\n\n\n-\n\n\n-\n\n\nshow the select dropdown\n\n\n\n\n\n\ndestroy\n\n\n-\n\n\n-\n\n\nremove fourBoot code and display oroiginal select\n\n\n\n\n\n\nselect-all\n\n\n-\n\n\n-\n\n\nselect all options\n\n\n\n\n\n\ndeselect-all\n\n\n-\n\n\n-\n\n\ndeselect all options\n\n\n\n\n\n\nset\n\n\nstring\n(option-name)\n\n\nstring / boolean / array / null (option-name)\n\n\nupdate options \nnote: by calling reset any update from \nset\n will be reset\n\n\n\n\n\n\nget\n\n\n- / string\n\n\n-\n\n\nwith no parameters return a clone of all config otherwise it will return specified option", 
+            "title": "Methods"
+        }, 
+        {
+            "location": "/methods/#fourboot-bootstrap-select-picker-bootstrap-4", 
+            "text": "javascript library to convert html select into beautiful  Bootstrap 4  dropdown", 
+            "title": "FourBoot Bootstrap Select Picker (Bootstrap 4)"
+        }, 
+        {
+            "location": "/methods/#methods", 
+            "text": "here is a list of all available methods allow yoiu to get or modify select dropdown     Name  param1  param2  Description      reset  -  -  re-read configuration from  data-  attributes and passed configuration to js code then update and re-write the dropdown    update  -  -  update and re-write the dropdown    val  integer  string  array    disabled  boolean  -  disable/enable the select and it's dropdown    toggle  -  -  open or close the dropdown menu for select dropdown    hide  -  -  hide the select dropdown    show  -  -  show the select dropdown    destroy  -  -  remove fourBoot code and display oroiginal select    select-all  -  -  select all options    deselect-all  -  -  deselect all options    set  string (option-name)  string / boolean / array / null (option-name)  update options  note: by calling reset any update from  set  will be reset    get  - / string  -  with no parameters return a clone of all config otherwise it will return specified option", 
+            "title": "Methods:"
+        }, 
+        {
+            "location": "/options/", 
+            "text": "FourBoot Bootstrap Select Picker (Bootstrap 4)\n\n\njavascript library to convert html select into beautiful \nBootstrap 4\n dropdown\n\n\nOptions:\n\n\nhere is a list of all available options\n\n\nNote:\n All options can be passed directly to JS and can be overriden for each element individual by \ndata-\n attribute\n\n\n\n\n\n\n\n\nName\n\n\nType\n\n\nDefault\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nclass\n\n\nstring\n\n\n\"fourboot-default\"\n\n\nthe dropdown button classes.\n\n\n\n\n\n\ndropdownClass\n\n\nstring\n\n\n\"\"\n\n\nadd .dropdown classes, useful when add .dropleft, .dropright, .dropup, ... etc\n\n\n\n\n\n\ncloseOnSelect\n\n\nboolean\n\n\ntrue\n\n\non single select, should dropdown close after select or not.\n\n\n\n\n\n\nmultipleSelectedSeparator\n\n\nstring\n\n\n', '\n\n\nmultiple selected choices separator text on dropdown button\n\n\n\n\n\n\nliveSearch\n\n\nboolean\n\n\nfalse\n\n\nenable/disable the live search input\n\n\n\n\n\n\nliveSearchCaseSensitive\n\n\nboolean\n\n\nfalse\n\n\nallows for accent-insensitive searching.\n\n\n\n\n\n\nmaxOptions\n\n\ninteger\n\n\nnull\n\n\nnull\n\n\n\n\n\n\nheight\n\n\ncss height\n\n\n'192px'\n\n\ndetermine the height of the dropdown\n\n\n\n\n\n\nObserverEnabled\n\n\nboolean\n\n\ntrue\n\n\nenabling the observer will automatically detect any changes (add/remove options) to select and manipulate changes to dropdown according to new changes\n\n\n\n\n\n\nactions\n\n\nboolean\n\n\narray\n\n\nfalse\n\n\n\n\n\n\nheader\n\n\nstring\n\n\nnull\n\n\nnull\n\n\n\n\n\n\nautoSelectFirst\n\n\nboolean\n\n\nfalse\n\n\nwhen false if no option has is has selected attribute then the default value is null, or empty array in multiple case\n\n\n\n\n\n\nselectedTextFormat\n\n\nstring\n\n\n\"values\"\n\n\naccepted values are: \n [\"values\",\"count\",\"count \n X\",\"static\"] \n \n  - \nvalues:\n always display selected values joined by \nmultipleSelectedSeparator\n \n - \ncount:\n always display selected count in format \nX of Y selected\n  \n - \ncount \n X:\n if count of selected is greater than X then \ncount\n is applied otherwise \nvalues\n is applied  \n - \nstatic:\n always display the placeholder\n\n\n\n\n\n\n\n\n\n\n\noption\n element attributes:\n\n\n\n\ndata-tokens\n =\n  allow to search form options by any tokens\n\n\ndata-class\n =\n  allow to add class for dropdown item corresponding to this option\n\n\ndata-icon\n =\n  allow to add icon before option text \nexample: data-icon=\"fa fa-trash\"\n\n\ndata-content\n =\n  allow to override original content with custom content\n\n\ntitle\n =\n display alternate text to original when option is selected", 
+            "title": "Options"
+        }, 
+        {
+            "location": "/options/#fourboot-bootstrap-select-picker-bootstrap-4", 
+            "text": "javascript library to convert html select into beautiful  Bootstrap 4  dropdown", 
+            "title": "FourBoot Bootstrap Select Picker (Bootstrap 4)"
+        }, 
+        {
+            "location": "/options/#options", 
+            "text": "here is a list of all available options  Note:  All options can be passed directly to JS and can be overriden for each element individual by  data-  attribute     Name  Type  Default  Description      class  string  \"fourboot-default\"  the dropdown button classes.    dropdownClass  string  \"\"  add .dropdown classes, useful when add .dropleft, .dropright, .dropup, ... etc    closeOnSelect  boolean  true  on single select, should dropdown close after select or not.    multipleSelectedSeparator  string  ', '  multiple selected choices separator text on dropdown button    liveSearch  boolean  false  enable/disable the live search input    liveSearchCaseSensitive  boolean  false  allows for accent-insensitive searching.    maxOptions  integer  null  null    height  css height  '192px'  determine the height of the dropdown    ObserverEnabled  boolean  true  enabling the observer will automatically detect any changes (add/remove options) to select and manipulate changes to dropdown according to new changes    actions  boolean  array  false    header  string  null  null    autoSelectFirst  boolean  false  when false if no option has is has selected attribute then the default value is null, or empty array in multiple case    selectedTextFormat  string  \"values\"  accepted values are:   [\"values\",\"count\",\"count   X\",\"static\"]      -  values:  always display selected values joined by  multipleSelectedSeparator    -  count:  always display selected count in format  X of Y selected     -  count   X:  if count of selected is greater than X then  count  is applied otherwise  values  is applied    -  static:  always display the placeholder", 
+            "title": "Options:"
+        }, 
+        {
+            "location": "/options/#option-element-attributes", 
+            "text": "data-tokens  =   allow to search form options by any tokens  data-class  =   allow to add class for dropdown item corresponding to this option  data-icon  =   allow to add icon before option text  example: data-icon=\"fa fa-trash\"  data-content  =   allow to override original content with custom content  title  =  display alternate text to original when option is selected", 
+            "title": "option element attributes:"
+        }
+    ]
+}
