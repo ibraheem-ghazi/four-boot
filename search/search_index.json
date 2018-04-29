@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "FourBoot Bootstrap Select Picker (Bootstrap 4)\n\n\njavascript library to convert html select into beautiful \nBootstrap 4\n dropdown\n\n\nDependencies:\n\n\n\n\nJQuery 1.8+\n\n\nBootstrap 4.0+ (preferred 4.1)\n\n\n\n\nCDNJS:\n\n\nThe folks at CDNJS host a copy of the library. The CDN is updated after the release is made public, which means there is a delay between the publishing of a release and its availability on the CDN, so keep that in mind. Just use these links:\n\n\nNot Supported Yet :(\n\n\n\n\nInstall with Bower:\n\n\nNot Supported Yet :(\n\n\n\n\nInstall with npm:\n\n\nNot Supported Yet :(\n\n\n\n\nInstall with NuGet:\n\n\nNot Supported Yet :(\n\n\n\n\nUsage:\n\n\nCreate your \nselect\n with the \n.four-boot-select\n class. The data-api will automatically theme these elements.\n\n\nselect class=\nfour-boot-select\n \n\n    \noption selected value=\napple\napple\n/option\n\n    \noption value=\nbanana\nbanana\n/option\n\n    \noption value=\nwatermelon\nwatermelon\n/option\n\n    \noption value=\nblueberries\nblueberries\n/option\n\n    \noption value=\napricots\napricots\n/option\n\n    \noption value=\ncantaloupe\ncantaloupe\n/option\n\n\n/select\n\n\n\n\n\nOptions can be passed via data attributes or JavaScript.\n\n\n$('select').fourBoot({\n    class:\nbtn-danger\n,\n    height:\n192px\n,\n    liveSearch:true\n});", 
+            "text": "FourBoot Bootstrap Select Picker (Bootstrap 4)\n\n\njavascript library to convert html select into beautiful \nBootstrap 4\n dropdown\n\n\nDependencies:\n\n\n\n\nJQuery 1.8+\n\n\nBootstrap 4.0+ (preferred 4.1)\n\n\n\n\nCDNJS:\n\n\nThe folks at CDNJS host a copy of the library. The CDN is updated after the release is made public, which means there is a delay between the publishing of a release and its availability on the CDN, so keep that in mind. Just use these links:\n\n\nNot Supported Yet :(\n\n\n\n\nInstall with Bower:\n\n\nNot Supported Yet :(\n\n\n\n\nInstall with npm:\n\n\nnpm install four-boot\n\n\n\n\nInstall with NuGet:\n\n\nNot Supported Yet :(\n\n\n\n\nUsage:\n\n\nCreate your \nselect\n with the \n.four-boot-select\n class. The data-api will automatically theme these elements.\n\n\nselect class=\nfour-boot-select\n \n\n    \noption selected value=\napple\napple\n/option\n\n    \noption value=\nbanana\nbanana\n/option\n\n    \noption value=\nwatermelon\nwatermelon\n/option\n\n    \noption value=\nblueberries\nblueberries\n/option\n\n    \noption value=\napricots\napricots\n/option\n\n    \noption value=\ncantaloupe\ncantaloupe\n/option\n\n\n/select\n\n\n\n\n\nOptions can be passed via data attributes or JavaScript.\n\n\n$('select').fourBoot({\n    class:\nbtn-danger\n,\n    height:\n192px\n,\n    liveSearch:true\n});", 
             "title": "Home"
         }, 
         {
@@ -27,7 +27,7 @@
         }, 
         {
             "location": "/#install-with-npm", 
-            "text": "Not Supported Yet :(", 
+            "text": "npm install four-boot", 
             "title": "Install with npm:"
         }, 
         {
