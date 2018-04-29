@@ -46,6 +46,8 @@ Create your ```<select>``` with the ```.four-boot-select``` class. The data-api 
 Options can be passed via data attributes or JavaScript.
 
 ```
+$('select').fourBoot();
+//OR
 $('select').fourBoot({
 	class:"btn-danger",
 	height:"192px",
