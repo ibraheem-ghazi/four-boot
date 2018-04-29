@@ -28,7 +28,7 @@ Not Supported Yet :(
 
 ### Install with npm:
 ```
-Not Supported Yet :(
+npm install four-boot
 ```
 
 ### Install with NuGet:
