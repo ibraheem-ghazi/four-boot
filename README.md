@@ -1,11 +1,13 @@
 **FourBoot Bootstrap Select Picker (Bootstrap 4)**
 ==========
 
+javascript library to convert html select into beautiful **Bootstrap 4** dropdown
+
+
 **Documentation**
 =================
 https://IbraheemAlnabriss.github.io/four-boot/
 
-javascript library to convert html select into beautiful **Bootstrap 4** dropdown
 
 ### Dependencies:
 
