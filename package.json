@@ -1,0 +1,44 @@
+{
+  "name": "four-boot",
+  "title": "four-boot",
+  "main": "dist/JQuery.four-boot.js",
+  "description": "javascript library to convert html select into beautiful Bootstrap 4 dropdown",
+  "version": "1.0",
+  "homepage": "https://ibraheemalnabriss.github.io/four-boot/",
+  "author": {
+    "name": "ibraheem alnabriss",
+    "url": "https://github.com/IbraheemAlnabriss"
+  },
+  "contributors": [
+    {
+    "name": "ibraheem alnabriss",
+    "url": "https://github.com/IbraheemAlnabriss"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/IbraheemAlnabriss/four-boot.git"
+  },
+  "files": [
+    "dist/*.js",
+    "dist/*.css"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": ">=1.8"
+  },
+  "devDependencies": {
+
+  },
+  "keywords": [
+    "form",
+    "bootstrap",
+    "bootstrap 4",
+    "bootstrap 4.1",
+    "select",
+    "selectpicker",
+    "select picker",
+    "replacement",
+    "four-boot"
+  ]
+}
