@@ -3,6 +3,13 @@
 
 javascript library to convert html select into beautiful **Bootstrap 4** dropdown
 
+### Changelog
+v2.0.0 (2018/08/04)
+* fixed issue (deselect-all dont work)[https://github.com/IbraheemAlnabriss/four-boot/issues/1]
+* fixed issue (added translation feature)[https://github.com/IbraheemAlnabriss/four-boot/issues/2]
+* fixed issue (width size is over)[https://github.com/IbraheemAlnabriss/four-boot/issues/5]
+* fixed issue (Error on IE 11)[https://github.com/IbraheemAlnabriss/four-boot/issues/6]
+
 ### Documentation
 ```
 https://IbraheemAlnabriss.github.io/four-boot/
