@@ -25,7 +25,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "jquery": ">=1.8"
+    "jquery": ">=1.8",
     "bootstrap": ">=4.0.0"
   },
   "devDependencies": {
