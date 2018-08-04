@@ -3,7 +3,7 @@
   "title": "four-boot",
   "main": "dist/JQuery.four-boot.js",
   "description": "javascript library to convert html select into beautiful Bootstrap 4 dropdown",
-  "version": "1.0",
+  "version": "2.0",
   "homepage": "https://ibraheemalnabriss.github.io/four-boot/",
   "author": {
     "name": "ibraheem alnabriss",
