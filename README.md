@@ -30,21 +30,21 @@ Not Supported Yet :(
 ### JSdeliver:
 
 ```
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/four-boot@1.0.0/dist/JQuery.four-boot.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/four-boot@1.0.0/dist/JQuery.four-boot.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/four-boot@latest/dist/JQuery.four-boot.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/four-boot@latest/dist/JQuery.four-boot.min.css">
 
-<script src="https://cdn.jsdelivr.net/npm/four-boot@1.0.0/dist/JQuery.four-boot.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/four-boot@1.0.0/dist/JQuery.four-boot.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/four-boot@latest/dist/JQuery.four-boot.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/four-boot@latest/dist/JQuery.four-boot.js"></script>
 ```
 
 ### Unpkg:
 
 ```
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/four-boot@1.0.0/dist/JQuery.four-boot.css">
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/four-boot@1.0.0/dist/JQuery.four-boot.min.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/four-boot@latest/dist/JQuery.four-boot.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/four-boot@latest/dist/JQuery.four-boot.min.css">
 
-<script src="https://unpkg.com/four-boot@1.0.0/dist/JQuery.four-boot.min.js"></script>
-<script src="https://unpkg.com/four-boot@1.0.0/dist/JQuery.four-boot.js"></script>
+<script src="https://unpkg.com/four-boot@latest/dist/JQuery.four-boot.min.js"></script>
+<script src="https://unpkg.com/four-boot@latest/dist/JQuery.four-boot.js"></script>
 ```
 
 ### Install with Bower:
