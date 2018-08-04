@@ -15,6 +15,26 @@ The folks at CDNJS host a copy of the library. The CDN is updated after the rele
 Not Supported Yet :(
 ```
 
+### JSdeliver:
+
+```
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/four-boot@latest/dist/JQuery.four-boot.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/four-boot@latest/dist/JQuery.four-boot.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/four-boot@latest/dist/JQuery.four-boot.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/four-boot@latest/dist/JQuery.four-boot.js"></script>
+```
+
+### Unpkg:
+
+```
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/four-boot@latest/dist/JQuery.four-boot.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/four-boot@latest/dist/JQuery.four-boot.min.css">
+
+<script src="https://unpkg.com/four-boot@latest/dist/JQuery.four-boot.min.js"></script>
+<script src="https://unpkg.com/four-boot@latest/dist/JQuery.four-boot.js"></script>
+```
+
 ### Install with Bower:
 ```
 Not Supported Yet :(
@@ -25,13 +45,9 @@ Not Supported Yet :(
 npm install four-boot
 ```
 
-### Install with NuGet:
-```
-Not Supported Yet :(
-```
 
 ### Usage:
-Create your ```<select>``` with the ```.four-boot-select``` class. The data-api will automatically theme these elements.
+Create your ```<select>``` then apply four-boot using js code.
 
 ```html
 <select class="four-boot-select" >
@@ -46,6 +62,8 @@ Create your ```<select>``` with the ```.four-boot-select``` class. The data-api 
 Options can be passed via data attributes or JavaScript.
 
 ```
+$('select').fourBoot();
+//OR
 $('select').fourBoot({
 	class:"btn-danger",
 	height:"192px",

@@ -11,7 +11,7 @@ here is a list of all available methods allow yoiu to get or modify select dropd
 |--- |--- |--- |--- |
 |reset|-|-|re-read configuration from ```data-``` attributes and passed configuration to js code then update and re-write the dropdown|
 |update|-|-|update and re-write the dropdown|
-|val|integer | string | array | null|-|update select value ```equal to $(select).val(somthing); $(select).fourBoot('update');|
+|val|integer OR string OR array OR null|-|update select value ```equal to $(select).val(somthing); $(select).fourBoot('update');|
 |disabled|boolean|-|disable/enable the select and it's dropdown|
 |toggle|-|-|open or close the dropdown menu for select dropdown|
 |hide|-|-|hide the select dropdown|

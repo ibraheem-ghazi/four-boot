@@ -1,12 +1,12 @@
 /*!
- * four-boot v1.0 beta (https://github.com/IbraheemAlnabriss/four-boot)
+ * four-boot v2.0.0 (https://github.com/IbraheemAlnabriss/four-boot)
  *
  * Copyright 2018 four-boot
  * Licensed under MIT (https://github.com/IbraheemAlnabriss/four-boot/blob/master/LICENSE)
  */
 .four-boot .dropdown{
     display:inline-block;
-    min-width:210px;
+    /*min-width:210px;*/ /*fix issue(#5)*/
     min-height:32px
 }
 .four-boot .dropdown .dropdown:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
@@ -70,6 +70,5 @@
     width:calc(50% - 10px);
     margin:2px 5px;
     border:1px solid #ccc;
-    font-size:1.4rem;
     line-height:1.5
 }

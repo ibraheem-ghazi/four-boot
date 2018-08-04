@@ -1,0 +1,20 @@
+aside.sidebar{
+	padding-top:5px;
+}
+div.with-link p{
+	display:inline;
+	margin:0px;
+	padding:0px;
+}
+div.with-link p .btn.btn-link{
+	padding-left:0px;
+	padding-right:0px;
+}
+article hr{
+	border:3px double #1d6946;
+	margin-left:-60px;
+	margin-right:-60px;
+}
+.markdown-section {
+    max-width: 1100px;
+}

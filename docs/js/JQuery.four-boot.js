@@ -1,9 +1,18 @@
 /*!
- * four-boot v1.12.4 (https://github.com/IbraheemAlnabriss/four-boot)
+ * four-boot v2.0.0 (https://github.com/IbraheemAlnabriss/four-boot)
  *
  * Copyright 2018 four-boot
  * Licensed under MIT (https://github.com/IbraheemAlnabriss/four-boot/blob/master/LICENSE)
  */
+//IE 11 fix for includes 
+if(navigator.userAgent.indexOf('MSIE')!==-1 || navigator.appVersion.indexOf('Trident/') > 0){
+	String.prototype.includes=function(needle){
+		return this.search(needle) != -1;
+	}
+	Array.prototype.includes=function(needle){
+		return this.filter(function(value){return value===needle}).length>0
+	}
+}
  (function($, window, document, undefined) {
 
     //the default options for select
@@ -21,6 +30,23 @@
         observerEnabled: true,
         actions: false,
         header: null,
+		lang:'en',
+		dict:{
+			en:{
+				selectAll:'Select all',
+				deselectAll:'Delect all',
+				nothingSelected:'Nothing selected',
+				search:'search ...',
+				noSearchResult:'No results matched "%%"',
+			},
+			ar:{
+				selectAll:'تحديد الكل',
+				deselectAll:'إلغاء الكل',
+				nothingSelected:'لا شيء محدد',
+				search:'البحث ...',
+				noSearchResult:'لا يوجد ما يطابق "%%"',
+			},
+		}
     };
 	
 	var $instances = null;
@@ -124,8 +150,10 @@
 	})();
 
     //FourBoot Handler
-    function fourBoot(optionsOrMethod = null, paramsOrBag = null,param2=null) {
-
+    function fourBoot(optionsOrMethod, paramsOrBag,param2) {
+		optionsOrMethod = optionsOrMethod || null;
+		paramsOrBag = paramsOrBag || null;
+		param2 = paramsOrBag || null;
         current_options = $.extend({}, $.fn.fourBoot.default, typeof optionsOrMethod === "object" ? optionsOrMethod : {});
        		
 		$instances = $(this);
@@ -175,7 +203,13 @@
 
     }
 	
-	function setOptionForElement(deactiveateAutoSelect=false){//deactiveateAutoSelect work-around fix
+	function _(key){
+		var current_lang = this.fourBootOptions.lang;
+		return this.fourBootOptions.dict[current_lang][key];
+	}
+	
+	function setOptionForElement(deactiveateAutoSelect){//deactiveateAutoSelect work-around fix
+		deactiveateAutoSelect = deactiveateAutoSelect || false;
 		this.fourBootOptions = $.extend({}, current_options, filterObjectByObject($(this).data(), default_options));
 		if(!this.fourBootOptions.autoSelectFirst && deactiveateAutoSelect && !$(this).find('option[selected]').length){
 			$(this).is('[multiple]')?$(this).val([]):$(this).val(null);
@@ -216,7 +250,7 @@
     }
 	function getSearchTemplate(element) {
         if (element.fourBootOptions.liveSearch) {
-            var searchTemplate = '<div class="dropdown-item four-boot-search"><input class="form-control" placeholder="' + 'search ...' + '" /></div>';
+            var searchTemplate = '<div class="dropdown-item four-boot-search"><input class="form-control" placeholder="' + _.apply(element,['search']) + '" /></div>';
             searchTemplate += '<div class="dropdown-divider"></div>';
 
             return searchTemplate;
@@ -228,10 +262,10 @@
 		if(!$(element).is('[multiple]')){return '';}
 		var template  =  '<div class="four-boot-actions container-fluid"><div class="row">';
 		if(element.fourBootOptions.actions===true || (isArray(element.fourBootOptions.actions) && $.inArray('select-all',element.fourBootOptions.actions)>-1)){
-			template +=  	'<button type="button" class="btn col" data-four-boot-action="select-all">'+'Select all'+'</button>';
+			template +=  	'<button type="button" class="btn col" data-four-boot-action="select-all">'+_.apply(element,['selectAll'])+'</button>';
 		}
-		if(element.fourBootOptions.actions===true || (isArray(element.fourBootOptions.actions) && $.inArray('deselect-all')>-1)){
-			template +=  	'<button type="button" class="btn col" data-four-boot-action="deselect-all">'+'Deselect all'+'</button>';
+		if(element.fourBootOptions.actions===true || (isArray(element.fourBootOptions.actions) && $.inArray('deselect-all',element.fourBootOptions.actions)>-1)){
+			template +=  	'<button type="button" class="btn col" data-four-boot-action="deselect-all">'+_.apply(element,['deselectAll'])+'</button>';
 		}
 			template += '</div></div>';
 		return template;
@@ -256,7 +290,10 @@
 		return template;
 	}
 
-    function generateOptionTemplate(o, opt_counter, selected = false, optgroup_id = false,isDisabled=false) {
+    function generateOptionTemplate(o, opt_counter, selected, optgroup_id,isDisabled) {
+		selected = selected || false;
+		optgroup_id = optgroup_id || false;
+		isDisabled = isDisabled || false;
         if ($(o).is('[data-divider]')) {
             return '<div class="dropdown-divider"></div>';
         }
@@ -293,7 +330,7 @@
 			else if(key === 'count'){
 				var selected = $(element).find('option:selected').length;
 				var total = $(element).find('option').length;
-				return `${selected} of ${total} selected`;				
+				return selected+" of "+total+" selected";				
 			}
 			
 		} 
@@ -316,7 +353,7 @@
 			placeholder = element.title || element.fourBootOptions.placeholder;
 		}
 		if(!placeholder || !placeholder.trim().length && !withFirst){
-			placeholder = "Nothing selected";
+			placeholder = _.apply(element,['nothingSelected']);
 		}
 		return placeholder;
     }
@@ -390,7 +427,7 @@
                 });
                 if (!filtered_items.length) {
                     $(this).parent().find('small').remove();
-                    $(this).after('<small>' + 'No results matched "%%"'.replace('%%', search_val) + '</small>');
+                    $(this).after('<small>' + _.apply($select[0],['noSearchResult']).replace('%%', search_val) + '</small>');
                 }
             } else {
                 $container.find('.dropdown-item.four-boot-search small').remove();
@@ -401,16 +438,20 @@
 
         });
         //prevent close dropdown on some conditions
-        $(document).on('click', ".four-boot .dropdown", function(e) {
+		$(document).on('click', ".four-boot .dropdown", function(e) {
             var $container = $(this).closest('.four-boot');
             var $select = $container.find('select');
-            if ($select.is("[multiple]") || $select[0].fourBootOptions.closeOnSelect === false || $(e.target).is('[data-four-boot-action]')) {
+			if(!$select.length){return;};
+            if ($select.is("[multiple]") || $select[0].fourBootOptions.closeOnSelect === false) {
                 e.preventDefault();
                 e.stopPropagation();
             }
         });
         //on dropdown action click
         $(document).on('click', ".four-boot .dropdown .dropdown-menu .four-boot-actions button[data-four-boot-action]", function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+			
 			switch($(this).data('four-boot-action')){
 				
 				case 'select-all':

@@ -16,11 +16,11 @@ here is a list of all available options
 |multipleSelectedSeparator|string|', '|multiple selected choices separator text on dropdown button|
 |liveSearch|boolean|false|enable/disable the live search input|
 |liveSearchCaseSensitive|boolean|false|allows for accent-insensitive searching.|
-|maxOptions|integer | null|null|define max option selected|
+|maxOptions|integer OR null|null|define max option selected|
 |height|css height|'192px'|determine the height of the dropdown|
 |ObserverEnabled|boolean|true|enabling the observer will automatically detect any changes (add/remove options) to select and manipulate changes to dropdown according to new changes|
-|actions|boolean | array|false|When set to true, it will add all available actions (select/deselect) buttons , otherwise when it array it will accept any of these data ['select-all','deselect-all']|
-|header|string | null|null|when it is a string a header in top of dropdown will be visible|
+|actions|boolean OR array|false|When set to true, it will add all available actions (select/deselect) buttons , otherwise when it array it will accept any of these data ['select-all','deselect-all']|
+|header|string OR null|null|when it is a string a header in top of dropdown will be visible|
 |autoSelectFirst|boolean|false|when false if no option has is has selected attribute then the default value is null, or empty array in multiple case|
 |selectedTextFormat|string|"values"|accepted values are: <br> ["values","count","count > X","static"] <br> <br>  - **values:** always display selected values joined by ```multipleSelectedSeparator``` <br> - **count:** always display selected count in format ```X of Y selected```  <br> - **count > X:** if count of selected is greater than X then ```count``` is applied otherwise ```values``` is applied  <br> - **static:** always display the placeholder|
 
