@@ -3,6 +3,9 @@
 
 javascript library to convert html select into beautiful **Bootstrap 4** dropdown
 
+[![](https://data.jsdelivr.com/v1/package/npm/four-boot/badge)](https://www.jsdelivr.com/package/npm/four-boot)
+
+
 ### Changelog
 v2.0.0 (2018/08/04)
 * fixed issue (deselect-all dont work)[https://github.com/IbraheemAlnabriss/four-boot/issues/1]
