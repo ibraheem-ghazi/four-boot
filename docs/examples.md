@@ -6,7 +6,9 @@ javascript library to convert html select into beautiful **Bootstrap 4** dropdow
 ### Examples:
 
 #### <u>*Standard examples*</u>
+
 ###### <u>*(single)*</u>
+
 <select class ="four-boot" name="fourboot_select">
 	<option value="1">Banana</option>
 	<option value="2">Apple</option>
@@ -14,6 +16,8 @@ javascript library to convert html select into beautiful **Bootstrap 4** dropdow
 	<option value="4">Carrot</option>
 	<option value="5">Pinapple</option>
 </select>
+
+
 ```html
 <select class ="four-boot" name="fourboot_select">
 	<option value="1">Banana</option>
@@ -24,7 +28,9 @@ javascript library to convert html select into beautiful **Bootstrap 4** dropdow
 </select>
 ```
 
+
 ###### <u>*(optgroup)*</u>
+
 <select class ="four-boot" name="fourboot_select">
 	<optgroup label='Fruits'>
 		<option value="1">Banana</option>
