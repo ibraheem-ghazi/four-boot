@@ -15,7 +15,7 @@ v2.0.0 (2018/08/04)
 
 ### Documentation
 ```
-https://IbraheemAlnabriss.github.io/four-boot/
+https://ibraheem-ghazi.github.io/four-boot/
 ```
 
 ### Dependencies:
